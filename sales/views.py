@@ -175,7 +175,7 @@ def first_page(request, username):
     for i in range(min(10, len(ordered_interests))):
         final_wishes.append(ordered_interests[i].title.annunci_titolo.all()[0])
         int_wishes_count += 1
-    for j in range(min(20-int_wishes_count, 10)): #len(ordered_wishes)
+    for j in range(min(20-int_wishes_count, len(ordered_wishes))):
         final_wishes.append(ordered_wishes[j].ad)
 
     #The selected ads are passed to the home template
