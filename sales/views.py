@@ -10,6 +10,9 @@ import numpy as np
 from kmeans.kmeans_functions import elbow_kmeans
 from background_task import background
 import random
+import warnings
+
+
 
 # Create your views here.
 
@@ -30,8 +33,9 @@ def signup(request):
 
 #@background(schedule=10)
 def run_kmeans():
+    warnings.filterwarnings("error")
 
-    print('Started')
+    #print('Started')
 
     # Students objects
     students = models.StudentProfile.objects.all()
@@ -90,9 +94,19 @@ def run_kmeans():
 
     s_values = np.array(students_matrix, dtype=float)
 
-    prova = s_values.shape
+    #prova = s_values.shape
 
-    clusters, _, k = elbow_kmeans(s_values, 10)
+    clusters = None
+
+    done = False
+
+    while not done:
+        try:
+            clusters, _, k = elbow_kmeans(s_values, 10)
+            done = True
+        except RuntimeWarning:
+            print("RuntimeWarning")
+            done = False
 
     for i in range(len(students)):
         students[i].cluster_number=clusters[i]
@@ -179,7 +193,14 @@ def first_page(request, username):
         final_wishes.append(ordered_wishes[j].ad)
 
     #The selected ads are passed to the home template
-    return render(request, 'first_page.html', {'ads': final_wishes, 'count': len(final_wishes)})
+    return render(request, 'first_page.html', {'ads': [final_wishes[:4], final_wishes[4:8], final_wishes[8:12], final_wishes[12:16], final_wishes[16:]], 'count': len(final_wishes)})
+
+def ad_details(request, ad_pk):
+
+    # Ad that is going to be shown
+    ad = get_object_or_404(models.BookAd, pk = ad_pk)
+
+    return render(request, 'ads.html', {'ad': ad})
 
 '''
 def first_page(request, username):

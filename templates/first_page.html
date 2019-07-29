@@ -6,10 +6,20 @@
 {% block content %}
     {% if user.is_authenticated %}
 
-        {% for ad in ads %}
-            <p>{{ ad }}</p>
+        {% for riga in ads %}
+            <div class="container-fluid">
+                <div class="row">
+                    {% for libro in riga %}
+                        <div class="col-md-3 articolo">
+                            <figure class="figure center">
+                              <img src="{{ libro.photo.url }}" class="figure-img img-fluid rounded catalog-image center" alt="...">
+                              <figcaption class="figure-caption text-center center"><a href="ads/{{ libro.pk }}">{{ libro }}</a></figcaption>
+                            </figure>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         {% endfor %}
-        <p>{{ count }}</p>
     {% else %}
         <p>You are not logged in</p>
         <a href="{% url 'login' %}">login</a>

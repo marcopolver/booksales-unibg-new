@@ -1,5 +1,6 @@
 import numpy as np
 from copy import deepcopy
+import warnings
 
 '''
 Function that returns k clusters from the given data X
@@ -25,6 +26,7 @@ def calculate_clusters(X, k):
         clusters = np.argmin(distances, axis=1)
         centers_old = deepcopy(centers_new)
         for i in range(k):
+            #print(X[clusters==i])
             centers_new[i] = np.nanmean(X[clusters == i], axis=0)
 
         error = np.linalg.norm(centers_new - centers_old)
@@ -62,8 +64,9 @@ def elbow_kmeans(X, max_k):
     k = 2
     clusters = None
     centers = None
+    count = 0
 
-    while abs(derivata)>0.1 and k<=max_k:
+    while abs(derivata)>0.1 and k<=max_k and count<100:
 
         t_cost_old = t_cost_new
 
@@ -81,9 +84,12 @@ def elbow_kmeans(X, max_k):
 
         derivata = t_cost_new-t_cost_old
 
-        print(k)
+        #print(k)
         k = k + 1
 
-        print(derivata)
+        #print(derivata)
+
+    if count==100:
+        raise RuntimeWarning
 
     return clusters, centers, k

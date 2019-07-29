@@ -1,0 +1,13 @@
+img.catalog-image {
+    height: 200px; !important;
+}
+
+img.ad_main {
+    height: 400px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
