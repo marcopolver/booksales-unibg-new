@@ -5,7 +5,7 @@
 
 {% block content %}
     {% if user.is_authenticated %}
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <img src="{{ ad.photo.url }}" class="ad_main" alt="...">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-md-4">
                     <h4>Info about the seller</h4>
-                    <p><b>Username: </b><a href="{{ ad.seller.username }}">{{ ad.seller }}</a> </p>
+                    <p><b>Username: </b><a href="/{{ ad.seller.username }}">{{ ad.seller }}</a> </p>
                 </div>
             </div>
         </div>

@@ -6,8 +6,14 @@ img.ad_main {
     height: 400px;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+img.articolo {
+    display: block;
 }
+
+
+@media (max-width: 1199px) {
+      .articolo {
+          display: block;
+          width: 220px;
+      }
+    }

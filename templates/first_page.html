@@ -7,15 +7,24 @@
     {% if user.is_authenticated %}
 
         {% for riga in ads %}
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     {% for libro in riga %}
-                        <div class="col-md-3 articolo">
-                            <figure class="figure center">
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                              <img class="card-img-top articolo" src="{{ libro.photo.url }}" alt="{{ libro.title }}">
+                              <div class="card-body">
+                                <h5 class="card-title">{{ libro.title }}</h5>
+                                <p class="card-text">Class: {{ libro.quality_class }}<br>Price: {{ libro.price }}</p>
+                                <a href="/ads/{{ libro.pk }}" class="btn btn-primary">Info</a>
+                              </div>
+                            </div>
+                        </div>
+                            <!--<figure class="figure center">
                               <img src="{{ libro.photo.url }}" class="figure-img img-fluid rounded catalog-image center" alt="...">
                               <figcaption class="figure-caption text-center center"><a href="ads/{{ libro.pk }}">{{ libro }}</a></figcaption>
                             </figure>
-                        </div>
+                        </div>-->
                     {% endfor %}
                 </div>
             </div>

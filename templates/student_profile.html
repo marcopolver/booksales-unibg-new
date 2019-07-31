@@ -1,0 +1,46 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}{{ profile.user.username }}{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2>{{ profile.user.username }}</h2>
+                    <p><b>Name: </b>{{ profile.name }} {{ profile.surname }}</p>
+                    <p><b>Facebook page: </b><a href="{{ ad.seller.username }}">{{ ad.seller }}</a></p>
+                    <p><b>Telephone number:</b>{{ profile.telephone_number }}</p>
+                    <p><b>Facebook profile:</b>{{ profile.facebook_page }}</p>
+                    <p><b>Major:</b>{{ profile.major }}</p>
+                    <h3>Ads by this user:</h3>
+
+                        <div class="row">
+                            {% for ad in profile.user.annunci_studente.all %}
+                            <div class="col-md-4">
+                                <div class="card center" style="width: 18rem;">
+                                  <img class="card-img-top" src="{{ ad.photo.url }}" alt="{{ ad.title }}">
+                                  <div class="card-body">
+                                    <h5 class="card-title">{{ ad.title }}</h5>
+                                    <p class="card-text">Class: {{ ad.quality_class }}<br>Price: {{ ad.price }}</p>
+                                    <a href="/ads/{{ ad.pk }}" class="btn btn-primary">Info</a>
+                                  </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+
+                </div>
+                <div class="col-md-3">
+                    <h4>Ads by this user</h4>
+
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">login</a>
+    {% endif %}
+{% endblock %}
