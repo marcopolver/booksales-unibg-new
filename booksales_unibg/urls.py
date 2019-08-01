@@ -22,5 +22,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),    #Admin panel
     path('', include('django.contrib.auth.urls')),  #Login and logout
     path('', include('sales.urls')),    #All the rest
-    #TODO signup
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

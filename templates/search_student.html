@@ -1,0 +1,30 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Search student{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <form action="{% url 'search_student_results' %}" method="get">
+                <input name="username" type="text" placeholder="Type the username or part of it">
+                <label for="major-select">Major:</label>
+                <select id="major-select" name="major">
+                    {% for major in majors %}
+                        <option value={{ major }}>{{ major }}</option>
+                    {% endfor %}
+                </select>
+                <label for="yos-select">Year of study:</label>
+                <select id="yos-select" name="year_of_study">
+                    {% for yos in years %}
+                        <option value={{ yos }}>{{ yos }}</option>
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">login</a>
+    {% endif %}
+{% endblock %}

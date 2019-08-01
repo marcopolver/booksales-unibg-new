@@ -1,0 +1,28 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Search student{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <h2 class="h2">Results:</h2>
+
+            {% for profile in object_list %}
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="/media/profiles/user.png" class="figure-img img-fluid rounded catalog-image center" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <p><b>{{ profile.user.username }}</b></p>
+                        <p>Major: {{ profile.major }}</p>
+                        <p>Year of study: {{ profile.year_of_study }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">login</a>
+    {% endif %}
+{% endblock %}

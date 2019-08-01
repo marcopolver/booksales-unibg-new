@@ -4,7 +4,10 @@ from django.urls import reverse_lazy
 from django.contrib.auth.models import User
 from django.utils import timezone
 from django.shortcuts import get_object_or_404
+from django.db.models import Q
+from django.views.generic import ListView, TemplateView
 from sales import models
+
 #from datetime import datetime, timezone
 import numpy as np
 from kmeans.kmeans_functions import elbow_kmeans
@@ -209,3 +212,36 @@ def profile(request, username):
     profile = models.StudentProfile.objects.filter(user=user).all()[0]
 
     return render(request, 'student_profile.html', {'profile': profile})
+
+def search(request):
+
+    return render(request, 'search.html')
+
+
+def search_users(request):
+
+    majors = [major[0] for major in models.StudentProfile.MAJORS_NAMES]
+
+    return render(request, 'search_student.html', {'majors': majors, 'years': [1,2,3]})
+
+
+class SearchUsersResults(ListView):
+
+    model = models.StudentProfile
+    template_name = 'search_student_results.html'
+
+    def get_queryset(self):
+        username_content = self.request.GET.get('username')
+        major = self.request.GET.get('major')
+        year_of_study = self.request.GET.get('year_of_study')
+
+        users = User.objects.filter(username__icontains=username_content)
+        print(users)
+
+        profiles = models.StudentProfile.objects.filter(user__in=users)
+        print(profiles)
+        object_list = profiles.filter(major=major).filter(year_of_study=year_of_study)
+        print(object_list)
+
+        return object_list
+
