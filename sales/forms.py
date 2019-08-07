@@ -52,5 +52,21 @@ class BookAdForm(forms.ModelForm):
         model = BookAd
         fields = ['title', 'seller', 'description', 'price', 'quality_class']
 
+'''
+StudentsSearch form
+'''
+class StudentsSearchForm(forms.Form):
 
+    username = forms.CharField(label='Username:', max_length=25)    #Student's username
+    major = forms.ChoiceField(label="Major:", choices=StudentProfile.MAJORS_NAMES)
+    year_of_study = forms.ChoiceField(label="Year of study:", choices=((1,1),(2,2),(3,3)))
+
+'''
+AdsSearch form
+'''
+class AdsSearchForm(forms.Form):
+    title_name = forms.ChoiceField(label="Title:", choices=((title.name, title) for title in Title.objects.all()), required=True)
+    quality_class = forms.ChoiceField(label="Quality class:", choices=BookAd.CLASSES)
+    starting_price = forms.FloatField(label="Starting price:")
+    ending_price = forms.FloatField(label="Ending price:")
 

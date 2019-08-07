@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404
 from django.db.models import Q
 from django.views.generic import ListView, TemplateView
 from sales import models
+from .forms import StudentsSearchForm, AdsSearchForm
 
 #from datetime import datetime, timezone
 import numpy as np
@@ -196,7 +197,7 @@ def first_page(request, username):
         final_wishes.append(ordered_wishes[j].ad)
 
     #The selected ads are passed to the home template
-    return render(request, 'first_page.html', {'ads': [final_wishes[:4], final_wishes[4:8], final_wishes[8:12], final_wishes[12:16], final_wishes[16:]], 'count': len(final_wishes)})
+    return render(request, 'first_page.html', {'ads': final_wishes, 'count': len(final_wishes)})
 
 def ad_details(request, ad_pk):
 
@@ -220,9 +221,9 @@ def search(request):
 
 def search_users(request):
 
-    majors = [major[0] for major in models.StudentProfile.MAJORS_NAMES]
+    form = StudentsSearchForm()
 
-    return render(request, 'search_student.html', {'majors': majors, 'years': [1,2,3]})
+    return render(request, 'search_student.html', {'form': form})
 
 
 class SearchUsersResults(ListView):
@@ -245,3 +246,26 @@ class SearchUsersResults(ListView):
 
         return object_list
 
+def search_ads(request):
+
+    form = AdsSearchForm()
+
+    return render(request, 'search_ad.html', {'form': form})
+
+
+class SearchAdsResults(ListView):
+
+    model = models.BookAd
+    template_name = 'search_ad_results.html'
+
+    def get_queryset(self):
+        title_name = self.request.GET.get('title_name')
+        classe = self.request.GET.get('quality_class')
+        starting_price = self.request.GET.get('starting_price')
+        ending_price = self.request.GET.get('ending_price')
+
+        chosen_titles = models.Title.objects.filter(name=title_name)
+        ads = models.BookAd.objects.filter(title__in=chosen_titles).filter(quality_class=classe)
+        object_list = ads.filter(price__in=list(np.arange(float(starting_price), float(ending_price), 0.1)))
+
+        return object_list

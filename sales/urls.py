@@ -9,9 +9,9 @@ urlpatterns = [
     path('search/users/', views.search_users),                      #Ricerca utente
     path('search/users/results', views.SearchUsersResults.as_view(), name='search_student_results'),             #Risultati ricerca utente
     path('users/<str:username>/suggested', views.first_page),       #Consigli intelligenti
-    #path('users/<str:username>/personal', views.personal),          #Pagina personale utente
     path('users/<str:username>/profile', views.profile),            #Profilo utente
-    #path('search/ads/', views.search_ad),                           #Ricerca annuncio
+    path('search/ads/', views.search_ads),                      #Ricerca utente
+    path('search/ads/results', views.SearchAdsResults.as_view(), name='search_ad_results'),
     path('ads/<str:ad_pk>', views.ad_details),                      #Annuncio
     #path('search/titles/', views.search_title),                     #Titolo
     #path('titles/<str:title_pk>', views.title_details),             #Titolo

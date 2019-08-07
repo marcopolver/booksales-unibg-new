@@ -1,0 +1,46 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Search book ads</h5>
+                            <p class="card-text">You can search book ads and
+                            set several filters to find the book that best suits you.</p>
+                            <a href="/search/ads/" class="btn btn-primary">To book ads</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Search titles</h5>
+                            <p class="card-text">You can search titles,
+                            get info about their usefulness and find relative ads.</p>
+                            <a href="/search/titles/" class="btn btn-primary">To titles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Search users</h5>
+                            <p class="card-text">You can search other students and get
+                            in touch with them.</p>
+                            <a href="/search/users/" class="btn btn-primary">To users</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">login</a>
+    {% endif %}
+{% endblock %}

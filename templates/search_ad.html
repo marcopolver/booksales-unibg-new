@@ -1,12 +1,12 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
 
-{% block title %}Search student{% endblock %}
+{% block title %}Search ad{% endblock %}
 
 {% block content %}
     {% if user.is_authenticated %}
         <div class="container">
-            <form action="{% url 'search_student_results' %}" method="get">
+            <form action="{% url 'search_ad_results' %}" method="get">
                 {{ form }}
                 <input type="submit" value="Submit">
             </form>

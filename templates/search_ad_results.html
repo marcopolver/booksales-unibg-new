@@ -1,14 +1,15 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
 
-{% block title %}First page{% endblock %}
+{% block title %}Search student{% endblock %}
 
 {% block content %}
     {% if user.is_authenticated %}
-
         <div class="container">
+
+            <h2 class="h2">Results:</h2>
             <div class="row">
-                {% for libro in ads %}
+                {% for libro in object_list %}
                     <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
                           <img class="card-img-top articolo" src="{{ libro.photo.url }}" alt="{{ libro.title }}">
@@ -21,6 +22,7 @@
                     </div>
                 {% endfor %}
             </div>
+
         </div>
 
     {% else %}
