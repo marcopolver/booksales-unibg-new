@@ -14,9 +14,9 @@
                         <img src="/media/profiles/user.png" class="figure-img img-fluid rounded catalog-image center" alt="...">
                     </div>
                     <div class="col-md-10">
-                        <p><b>{{ profile.user.username }}</b></p>
-                        <p>Major: {{ profile.major }}</p>
-                        <p>Year of study: {{ profile.year_of_study }}</p>
+                        <p id="student-username"><b>{{ profile.user.username }}</b></p>
+                        <p id="student-major">Major: {{ profile.major }}</p>
+                        <p id="student-yos">Year of study: {{ profile.year_of_study }}</p>
                     </div>
                 </div>
             {% endfor %}
