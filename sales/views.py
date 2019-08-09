@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponseRedirect
-from sales.forms import CustomUserCreationForm
+from sales.forms import CustomUserCreationForm, StudentProfileForm
 from django.urls import reverse_lazy
 from django.contrib.auth.models import User
 from django.utils import timezone
@@ -26,13 +26,19 @@ def home(request):
 
 def signup(request):
     if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
+        user_form = CustomUserCreationForm(request.POST)
+        student_form = StudentProfileForm(request.POST)
+        if user_form.is_valid() and student_form.is_valid():
+            user = user_form.save()
+            student = student_form.save(commit=False)
+            student.user = user
+            student.save()
+            student_form.save_m2m()
             return HttpResponseRedirect(reverse_lazy('login'))
     else:
-        form = CustomUserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+        user_form = CustomUserCreationForm()
+        student_form = StudentProfileForm()
+    return render(request, 'signup.html', {'user_form': user_form, 'student_form': student_form})
 
 
 #@background(schedule=10)
@@ -197,7 +203,7 @@ def first_page(request, username):
         final_wishes.append(ordered_wishes[j].ad)
 
     #The selected ads are passed to the home template
-    return render(request, 'first_page.html', {'ads': final_wishes, 'count': len(final_wishes)})
+    return render(request, 'first_page.html', {'ads': final_wishes, 'count': len(final_wishes), 'current': c})
 
 def ad_details(request, ad_pk):
 

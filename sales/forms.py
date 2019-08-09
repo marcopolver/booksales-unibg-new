@@ -34,7 +34,7 @@ StudentProfile creation form
 class StudentProfileForm(forms.ModelForm):
     class Meta:
         model = StudentProfile
-        fields = ['name', 'surname', 'major']
+        fields = ['name', 'surname', 'major', 'year_of_study']
 
 '''
 Title creation form
