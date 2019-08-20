@@ -148,7 +148,7 @@ class UseCasesTest(unittest.TestCase):
         suggested_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'Suggested' in link.text][0]
         suggested_link.click()
 
-        time.sleep(5)  #Necessary for the algorhythm to be executed
+        time.sleep(60)  #Necessary for the algorhythm to be executed
 
         #The user should be in their personal suggested-ads page
         self.assertEqual(self.browser.current_url, 'http://localhost:8000/users/ING_GES_M11/suggested')

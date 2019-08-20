@@ -1,0 +1,6 @@
+24/10/2018:
+	- Modifiche minori al testo
+	- Aggiunto layout per tabella requisiti
+28/10/2018:
+	- Aggiunti alcuni requisiti
+

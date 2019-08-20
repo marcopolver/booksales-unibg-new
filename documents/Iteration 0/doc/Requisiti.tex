@@ -1,0 +1,207 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=3.00cm, right=3.00cm, top=3.00cm, bottom=3.00cm]{geometry}
+\author{Del Prete Giovanni, Ghilardi Nicola, Polver Marco}
+\title{BookSales UniBG}
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+	\section{Requisiti e scelte progettuali}
+	\subsection{Obiettivi}
+	\textit{BookSales UniBG} è un'applicazione web ideata con l'idea di favorire e migliorare i processi di compravendita di libri universitari all'interno dell'Università degli Studi di Bergamo. 
+	\\
+	Attualmente per la vendita di libri gli studenti utilizzano mezzi quali le bacheche distribuite nelle diverse sedi, gruppi sui social network e siti web di annunci oppure sfruttano le proprie conoscenze personali. Tutti questi mezzi risultano avere problemi di inefficacia dovuti alla scarsa visibilità dei libri messi in vendita oppure alla natura troppo "general purpose" dei servizi online utilizzati.\\
+	\textit{BookSales UniBG} si propone di fornire un mezzo per la vendita di libri universitari che sia in grado di:
+	\begin{enumerate}
+		\item Facilitare l'inserimento di un'inserzione da parte di un venditore.
+		\item Mostrare ai potenziali acquirenti tutti quei libri che con maggior probabilità potrebbero far parte dei loro interessi.
+		\item Favorire compravendite soddisfacenti.
+		\item Impedire la compravendita di appunti o libri fotocopiati.
+		\item Garantire l'accesso al servizio da qualsiasi dispositivo connesso in rete.
+	\end{enumerate}
+
+	\subsection{Requisiti funzionali}
+	Per la comprensione dei requisiti è necessario chiarire il significato dato ai seguenti termini:
+	\begin{itemize}
+		\item \textit{Libro}: si intende uno specifico libro in vendita, con relativa inserzione.
+		\item \textit{Titolo}: si intende un elaborato generico, non una sua realizzazione fisica.
+	\end{itemize}
+	Esempio: "Fondamenti di meccanica per l'ingegneria" è un titolo, mentre per libro si potrebbe intendere una sua qualsiasi realizzazione fisica messa in vendita da un utente. \\
+	Di seguito vengono riportati i requisiti funzionali del software:\\
+	
+	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
+		Codice requisito&Nome&Descrizione\\ \hline
+		AC1&Registrazione nuovo utente&Registrazione e verifica dei dati di un nuovo utente che intende usufruire del servizio. I dati da fornire obbligatoriamente durante la registrazione dovranno essere i seguenti:
+		\begin{itemize}
+			\item Username desiderato
+			\item Nome e cognome
+			\item Mail universitaria UniBG
+			\item Corso di laurea
+		\end{itemize}
+		Deve essere inoltre possibile fornire dati facoltativi quali:
+		\begin{itemize}
+			\item Numero di telefono
+			\item Mail personale (diversa da quella universitaria)
+			\item Pagina Facebook
+			\item Foto profilo
+		\end{itemize}
+		A richiesta di registrazione effettuata, il sistema deve verificare che nessun utente si sia già registrato con l'indirizzo email inserito ed inviare a quest'ultimo una email contenente una password generata casualmente e che dovrà essere utilizzata dall'utente per confermare la propria registrazione entro 3 giorni, oltre ai quali la sua registrazione verrà annullata.\\ \hline
+		AC2&Accesso utente registrato&Accesso al servizio da parte di un utente precedentemente registrato.\\ \hline
+		RI1&Ricerca libro&Ricerca di un libro di testo in vendita con filtraggio basato su:
+		\begin{itemize}
+			\item Corso di laurea, anno e specifico corso per cui un libro è consigliato
+			\item Titolo
+			\item Edizione
+			\item ISBN
+			\item Prezzo
+			\item Voto medio del venditore
+			\item Condizioni del libro:
+			\begin{itemize}
+				\item Classe A: libro intatto senza sottolineature o appunti.
+				\item Classe B: libro intatto con sottolineature e appunti.
+				\item Classe C: libro con piccoli segni d'usura, sottolineature e appunti.
+				\item Classe D: libro con pagine stropicciate o rovinate, pieghe della copertina, sottolineature e appunti.
+			\end{itemize}
+			
+		\end{itemize}\\ \hline
+	\end{tabular}
+
+	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
+		Codice requisito&Nome&Descrizione\\ \hline
+		RI2&Visualizzazione libri d'interesse&Visualizzazione di libri potenzialmente interessanti sulla base di:
+		\begin{itemize}
+			\item Interesse mostrato esplicitamente dall'utente tramite inserimento di uno specifico libro nella lista "Osservati" (\textit{RI3}) o tramite inserimento di un titolo o di una serie di titoli legati ad un determinato corso nella lista "Interessi" (\textit{RI4}).
+			\item Ricerche effettuate dall'utente nell'ultima settimana.
+			\item Interesse mostrato da studenti del medesimo corso di laurea e dello stesso anno di corso. In particolare verranno mostrati i 3 titoli più cercati da questi.
+		\end{itemize}\\ \hline
+		RI3&Inserimento libro in lista "Osservati"&Inserimento di uno specifico libro in vendita (non un titolo) nella lista "Osservati", la quale contiene riferimenti alle inserzioni che l'utente intende seguire.\\ \hline
+		RI4&Inserimento titoli in lista "Interessi"&Inserimento di specifici titoli o serie di titoli legati ad un corso universitario nella lista "Osservati", la quale permette all'utente di seguire facilmente tutte le inserzioni relative a più libri che rispettano tali requisiti.\\ \hline
+		I1&Inserimento inserzione&Inserimento di un'inserzione per la vendita di un libro. L'inserzione deve contenere le seguenti informazioni mandatorie:
+		\begin{enumerate}
+			\item Titolo: deve essere selezionato da una lista di titoli già presenti nel sistema. In caso di assenza si richiede all'utente di inserire le informazioni del libro nel sistema affinché queste siano disponibili in futuro (\textit{I2}).
+			\item Autore: aggiunto automaticamente tramite selezione del titolo.
+			\item ISBN.
+			\item Almeno una foto.
+			\item Prezzo.
+			\item Commento.	
+			\item Corso per il quale il libro è consigliato.
+			\item Condizioni del libro seguendo le indicazioni formalizzate in (\textit{R1}).
+		\end{enumerate}
+		Una volta confermata da parte dell'utente la richiesta di inserimento dell'inserzione, il sistema verifica che siano rispettate le seguenti condizioni:
+		\begin{itemize}
+			\item L'utente non deve aver proposto un'inserzione relativa allo stesso libro negli ultimi 7 giorni.
+			\item Il commento al libro non deve contenere parole scurrili.
+		\end{itemize}
+		Se l'inserzione rispetta le condizioni di cui sopra, il sistema la inserisce nel database e conferma l'accettazione della richiesta all'utente. In caso contrario notifica l'errore all'utente, richiedendogli di attendere nel primo caso e di modificare il commento nel secondo caso.\\ \hline
+	\end{tabular}
+
+	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
+		Codice requisito&Nome&Descrizione\\ \hline
+		I2&Inserimento di un nuovo titolo&Inserimento da parte dell'utente di un titolo assente dal sistema. Le informazioni da fornire sono le seguenti:
+		\begin{itemize}
+			\item Titolo
+			\item Autore/i
+			\item Edizione
+			\item ISBN
+			\item Corso per il quale il testo è consigliato
+		\end{itemize}
+		Il sistema verifica che nessun altro titolo con il medesimo ISBN sia stato inserito in precedenza e, se ciò non è avvenuto, inserisce il titolo nel database e crea automaticamente una pagina del titolo contenente le informazioni fornite. Informazioni aggiuntive potranno essere aggiunte dagli utenti come specificato in \textit{T2}.\\ \hline
+		U1&Ricerca utente&Ricerca utenti con filtraggio basato su:
+		\begin{itemize}
+			\item Username
+			\item Nome e cognome
+			\item Corso di laurea
+			\item Anno di corso
+			\item Sede
+		\end{itemize}\\ \hline
+		U2&Accesso pagina utente&Accesso alla pagina personale di un altro utente, la quale deve contenere informazioni quali:
+		\begin{itemize}
+			\item Contatti (numero di telefono, mail, pagina Facebook, ...)
+			\item Numero di libri venduti
+			\item Numero di libri acquistati
+			\item Voto medio recensioni ricevute
+			\item Recensioni effettuate (sia nel ruolo di venditore che in quello di acquirente)
+			\item Recensioni ricevute in qualità di venditore
+			\item Recensioni ricevute in qualità di acquirente
+			\item Libri in vendita
+		\end{itemize}\\ \hline
+		U2.1&Accesso pagina personale&Accesso alla propria pagina personale. La pagina deve fornire le medesime informazioni fornite in \textit{U2}, ma deve risultare sempre accessibile con un solo click, qualunque sia la pagina del sito web aperta nell'istante corrente.\\ \hline
+		U3&Modifica pagina personale&Modifica delle informazioni mostrate nella pagina personale.\\ \hline
+	\end{tabular}
+	\newpage
+	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
+		Codice requisito&Nome&Descrizione\\ \hline
+		T1&Ricerca pagina titolo&Ricerca da parte dell'utente della pagina relativa ad un titolo. La pagina deve contenere, se presenti, informazioni riguardanti gli argomenti trattati dal libro e le recensioni degli utenti sull'utilità del libro ai fini dell'esame.\\ \hline
+		T2&Modifica pagina titolo&Modifica della pagina contenente le informazioni di un titolo da parte di un utente. Le informazioni che possono essere aggiunte sono le seguenti:
+		\begin{itemize}
+			\item Immagine della copertina
+			\item Argomenti trattati
+		\end{itemize}\\ \hline
+		V1&Vendita libro&Comunicazione da parte del venditore dell'avvenuta cessione del libro legato ad una specifica inserzione. Il venditore deve fornire come informazione il nome utente dell'acquirente. Una volta avvenuto questo, il sistema deve inviare una email all'acquirente in cui viene chiesto di confermare l'acquisto del libro (\textit{V2}).\\ \hline
+		V2&Richiesta conferma acquisto&Il sistema invia all'utente citato dal venditore come acquirente una email per richiedere la conferma dell'acquisto. L'email deve contenere un link ad una pagina in cui l'acquirente potrà confermare o negare l'acquisto (\textit{V3}).\\ \hline
+		V3&Conferma acquisto&Conferma o negazione dell'acquisto di un libro da parte dell'utente che è stato indicato dal venditore quale l'acquirente del libro oggetto della cessione. La pagina deve contenere un riassunto dell'inserzione in questione (foto principale, titolo, nome utente del venditore e prime 5 righe della descrizione).
+		In caso di conferma dell'acquisto:
+		\begin{itemize}
+			\item l'acquirente verrà invitato a recensire il venditore;
+			\item il libro verrà rimosso dall'elenco dei libri in vendita;
+			\item il libro verrà segnalato come "Venduto" in tutte le liste "Osservati" in cui è presente;
+			\item verranno aggiornati i dati relativi al numero di libri venduti e acquistati dei due utenti coinvolti;
+			\item il libro verrà rimosso dal database dopo una settimana;
+			\item il sistema invierà una email al venditore per comunicargli l'avvenuta conferma dell'acquisto ed invitarlo a recensire l'acquirente.
+		\end{itemize}
+		In caso di negazione dell'acquisto, il venditore deve essere notificato via email dell'avvenuto ed invitato a rieffettuare la procedura \textit{V1} selezionando un utente differente. \\ \hline
+		RE1&Recensione venditore&Inserimento da parte di un utente acquirente di una recensione del venditore di uno specifico libro. Questo dovrà risultare possibile soltanto dopo la conferma dell'acquisto di un libro. La recensione dovrà contenere un valore intero compreso tra 0 e 5 (indicato tramite stelle) ed un commento.\\ \hline
+		RE2&Recensione acquirente&Inserimento da parte di un utente venditore di una recensione dell'acquirente di uno specifico libro. Questo dovrà risultare possibile soltanto dopo la conferma dell'acquisto di un libro. La recensione dovrà contenere un valore intero compreso tra 0 e 5 (indicato tramite stelle) ed un commento.\\ \hline
+	\end{tabular}
+	\newpage
+	
+	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
+		Codice requisito&Nome&Descrizione\\ \hline
+		RE3&Recensione titolo&Inserimento da parte di un utente qualsiasi di una recensione di un qualsiasi titolo. La recensione dovrà contenere un valore intero compreso tra 0 e 5 (indicato tramite stelle) ed un commento.\\ \hline
+		S1&Segnalazione contenuto&Qualsiasi contenuto (inserzione, pagina utente, pagina di un titolo, recensione) deve risultare segnalabile da un qualsiasi utente. Durante la segnalazione di un contenuto, l'utente segnalatore deve specificare con un commento il motivo della segnalazione. TODO: categorie di segnalazione.\\ \hline
+		S2&Gestione segnalazioni&Gli amministratori devono avere accesso ad una pagina contenente una lista di segnalazioni dalla quale poter analizzare ogni singolo caso e decidere se eliminare un determinato contenuto segnalato o ritenere la segnalazione irrilevante. In caso di segnalazione accettata, l'utente autore del contenuto eliminato deve essere notificato dell'eliminazione del contenuto via email. A fronte di 3 segnalazioni nei confronti del medesimo utente accettate, l'utente in questione deve essere sospeso per 3 mesi.\\ \hline
+		B1&Comunicazioni broadcast&Invio di un messaggio diretto a tutti gli utenti del servizio da parte di un amministratore. Il sistema deve provvedere ad inviare il testo della comunicazione via email a tutti gli utenti.\\ \hline
+		AS1&Richiesta di assistenza&Richiesta di assistenza effettuata da un utente. Ogni richiesta deve includere un titolo, una descrizione del problema e un topic (DA VEDERE!!). Ogni richiesta viene gestita come un ticket avente un codice univoco.\\ \hline
+		AS2&Gestione richiesta d'assistenza&Ogni amministratore deve avere la possibilità di rispondere ad una richiesta d'assistenza. Nel momento in cui una richiesta viene gestita da uno specifico amministratore, gli altri amministratori non devono più avere la possibilità di gestirla. Successivamente alla gestione di una richiesta d'assistenza, la quale consiste in una risposta testuale da parte dell'amministratore, l'autore della richiesta viene notificato via email dell'avvenuta gestione della richiesta: l'email deve contenere il testo della risposta e un link alla pagina del ticket, presso la quale l'utente può continuare la conversazione con l'amministratore.
+	\end{tabular}
+	\newline
+	\newline
+	Ogni requisito che consenta l'inserimento di testo da parte di un utente deve prevedere un controllo automatico sul testo stesso, per evitare la pubblicazione di termini scurrili. In caso di presenza di parole offensive, il testo in questione non deve essere pubblicato e il sistema deve richiedere all'utente di inserire un testo privo di tali termini.
+	
+	\subsection{Codice etico}
+	Gli studenti che si registrano al servizio accettano di rispettare le seguenti regole:
+	\begin{enumerate}
+		\item E' vietato pubblicare contenuti offensivi o che possono ledere la sensibilità degli altri utenti.
+		\item E' vietato cedere libri fotocopiati o scannerizzati, anche a titolo gratuito.
+		\item E' vietato cedere appunti richiedendo un compenso. Gli appunti possono essere ceduti esclusivamente a titolo gratuito inserendoli nell'inserzione relativa ad un libro. Non è pertanto possibile cedere i soli appunti. 
+	\end{enumerate}
+	Una violazione dei precedenti punti può essere segnalata da qualsiasi utente. In particolare, per quanto riguarda il terzo punto, è possibile anche segnalare inserzioni in cui si sospetta che il venditore abbia aumentato il prezzo di un libro per includere implicitamente un pagamento di appunti ceduti insieme allo stesso.
+
+	\subsection{Scelte progettuali}
+	Per la realizzazione dell'applicazione sono state prese le seguenti scelte progettuali:
+	\begin{itemize}
+		\item Tipologia di applicazione: applicazione web, in modo da garantire un accesso semplice da qualsiasi tipo di dispositivo.
+		\item Linguaggio di programmazione per l'applicazione back-end: Python 3 - framework Django 2.1: framework moderno che offre numerosi servizi di default, linguaggio ordinato e di facile lettura.
+		\item Front-end: framework Bootstrap 4, per garantire una visualizzazione ottimale su dispositivi di dimensioni diverse.
+		\item L'applicazione lavorerà in uno spazio messo a disposizione gratuitamente dal PaaS PythonAnywhere, specializzato nell'esecuzione di applicazioni Python.
+	\end{itemize}
+
+	\subsection{Toolchain}
+	Le fasi di progettazione e codifica dell'applicazione verranno eseguite con l'ausilio dei seguenti tool:
+	\begin{itemize}
+		\item TexStudio: realizzazione della documentazione.
+		\item LucidChart: realizzazione di schemi in linguaggio UML.
+		\item PyDev: IDE basato su Eclipse utilizzato per la codifica dell'applicazione.
+		\item Github: versioning dell'applicazione.
+	\end{itemize}
+
+	\section{Casi d'uso}
+	
+
+\end{document}

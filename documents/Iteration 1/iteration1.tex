@@ -1,0 +1,75 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\usepackage[left=3.00cm, right=3.00cm, top=3.00cm, bottom=3.00cm]{geometry}
+\author{Del Prete Giovanni, Ghilardi Nicola, Polver Marco}
+\title{BookSales UniBG: iterazione 1}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	
+	\section{Obiettivi dell'iterazione}
+	Di seguito vengono riportate le funzionalità implementate durante l'iterazione 1:
+	\begin{enumerate}
+		\item Registrazione nuovo utente
+		\item Login
+		\item Logout
+		\item Ricerca utenti
+		\item Ricerca annunci
+	\end{enumerate}
+	Per l'implementazione di queste funzionalità si sono resi necessari due ulteriori passi:
+	\begin{enumerate}
+		\item \textit{Realizzazione dei modelli dei dati}: in Django i modelli sono delle classi Python che rappresentano le tabelle che devono essere realizzate all'interno del database.
+		\item \textit{Realizzazione di uno script Python per lo riempimento del database}: questo passo si è reso necessario per poter avere un numero consistente di dati su cui testare le diverse funzionalità dell'applicazione.
+	\end{enumerate}
+
+	\subsection{Note sul processo di implementazione}
+	L'obiettivo iniziale era quello di realizzare questo progetto tramite un processo di Test Driven Development puro, tuttavia è stato necessario modificare questo processo permettendoci di testare alcune componenti del software solo dopo la loro implementazione. \\
+	Questo va contro i principi del TDD, per cui bisognerebbe prima ideare una serie di test e solo dopo realizzare un codice sufficiente per passarli, ma si è reso necessario per due motivi:
+	\begin{enumerate}
+		\item \textit{Il nostro progetto è una applicazione web}: il testing delle applicazioni web risulta essere diverso rispetto al testing di applicazioni desktop e a volte i test risultano difficili anche solo da pensare prima di un'implementazione anche solo parziale della funzionalità da testare.
+		\item \textit{Inesperienza con Django}: per tutti e tre questo progetto ha rappresentato l'occasione di provare Django per la prima volta. Questo framework è stato scelto in quanto particolarmente utilizzato al giorno d'oggi, ma nessuno di noi l'aveva utilizzato prima di questo progetto. Questo ha reso difficile, soprattutto all'inizio, l'applicazione del TDD, in quanto la realizzazione di un test presuppone una buona conoscenza degli strumenti utilizzati. I risultati ottenuti, tuttavia, sono ottimi e anche la nostra confidenza nell'utilizzo di Django è cresciuta notevolmente con il tempo.
+	\end{enumerate}
+
+	\subsection{Note sui test effettuati}
+	Per la realizzazione dei test sono stati utilizzati due strumenti:
+	\begin{itemize}
+		\item La classe \textit{TestCase} fornita da Django, utilizzata per l'esecuzione di test strutturali.
+		\item \textit{Selenium WebDriver}, una famosa API che permette di automatizzare l'utilizzo di un qualsiasi browser, molto utile per l'esecuzione di test funzionali.
+	\end{itemize}
+	\subsubsection{Test strutturali}
+	Come già è stato detto in precedenza, i test strutturali sono stati effettuati utilizzando la classe TestCse che viene fornita da Django. \\
+	L'esecuzione di test all'interno del framework Django risulta particolarmente comoda in quanto permette di utilizzare un vero e proprio "database di test", evitando quindi di sporcare il database normalmnte utilizzato dall'applicazione con dati utili solo in fase di test. \\
+	I test strutturali effettuati per le varie funzionalità dell'applicazione verificano in genere i seguenti punti:
+	\begin{itemize}
+		\item Utilizzo del template HTML corretto in ogni pagina.
+		\item Restituzione dello status code corretto (quasi sempre 200 o 404) a fronte della richiesta di una pagina web con determinati dati.
+		\item Comportamento corretto dell'applicazione a seguito della somministrazione di dati corretti ed errati.
+	\end{itemize}
+
+	\subsubsection{Test funzionali}
+	In uno script Python è stato utilizzato Selenium WebDriver per effettuare test funzionali. \\
+	Le differenze tra i test che si possono eseguire con la classe TestCase e con il WebDriver sono notevoli:
+	\begin{itemize}
+		\item TestCase facilita l'utilizzo di richieste GET e POST. Selenium WebDriver è invece un puro sostituto dell'uomo, pertanto va istruito su quali tasti cliccare, i testi da inserire nelle varie textbox, ecc.
+		\item Selenium WebDriver non fa parte del framework Django, pertanto le azioni compiute da esso andranno a scrivere nuovi dati nel vero database dell'applicazione e non in un database di prova.
+	\end{itemize}
+	I test funzionali sono stati realizzati basandosi sui \textit{casi d'uso}, pertanto non testano una singola funzionalità dell'applicazione ma la successione delle azioni compiute normalmente da un utente con un certo fine.
+	
+	\subsubsection{Copertura}
+	Solo in poche occasioni la copertura dei test sui file Python presenti all'interno dell'applicazione risulta essere del 100\%, questo a causa dei seguenti motivi:
+	\begin{itemize}
+		\item All'interno dei file di un'app Django sono spesso presenti porzioni di codice di default che potrebbero non essere coperte.
+		\item Alcune funzioni utilizzano la libreria "random", la quale rende il comportamento di alcune porzioni di codice imprevedibile; non è quindi possibile avere una copertura del 100\% in certe funzioni.
+	\end{itemize}
+	
+\end{document}
