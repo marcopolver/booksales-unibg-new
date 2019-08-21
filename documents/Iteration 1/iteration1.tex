@@ -29,7 +29,7 @@
 	Per l'implementazione di queste funzionalità si sono resi necessari due ulteriori passi:
 	\begin{enumerate}
 		\item \textit{Realizzazione dei modelli dei dati}: in Django i modelli sono delle classi Python che rappresentano le tabelle che devono essere realizzate all'interno del database.
-		\item \textit{Realizzazione di uno script Python per lo riempimento del database}: questo passo si è reso necessario per poter avere un numero consistente di dati su cui testare le diverse funzionalità dell'applicazione.
+		\item \textit{Realizzazione di uno script Python per il riempimento del database}: questo passo si è reso necessario per poter avere un numero consistente di dati su cui testare le diverse funzionalità dell'applicazione.
 	\end{enumerate}
 
 	\subsection{Note sul processo di implementazione}
@@ -71,5 +71,76 @@
 		\item All'interno dei file di un'app Django sono spesso presenti porzioni di codice di default che potrebbero non essere coperte.
 		\item Alcune funzioni utilizzano la libreria "random", la quale rende il comportamento di alcune porzioni di codice imprevedibile; non è quindi possibile avere una copertura del 100\% in certe funzioni.
 	\end{itemize}
+
+	\section{Realizzazione dei modelli dei dati}
+	Non tutte le tabelle progettate nella iterazione 0 sono state tradotte in modelli, in quanto solo una parte delle funzionalità del progetto sono state e saranno implementate, rendendo alcune tabelle superflue. \\
+	I modelli creati sono i seguenti:
+	\begin{itemize}
+		\item User: modello base fornito di default da Django. 
+		\item StudentProfile: modello che si lega a User per fornire ulteriori informazioni sul singolo utente. I suoi campi:
+		\begin{itemize}
+			\item user: OneToOneField (simile a Foreign Key) che lega un solo User ad uno StudentProfile.
+			\item name: nome dello studente.
+			\item surname: cognome dello studente.
+			\item telephone\_number: numero di telefono dello studente.
+			\item facebook\_page: link alla pagina Facebook dello studente.
+			\item major: corso di laurea a cui lo studente è iscritto.
+			\item year\_of\_study: anno di corso.
+			\item sold\_books\_number: numero di libri venduti.
+			\item bought\_books\_number: numero di libri acquistati.
+			\item reports\_number: numero di segnalazioni ricevute.
+			\item cluster\_number: numero del cluster cui appartiene.
+		\end{itemize}
+		\item Title: modello per i singoli titoli. I campi sono:
+			\begin{itemize}
+				\item isbn: ISBN del titolo.
+				\item name: nome del titolo.
+				\item cover\_image: ImageField per l'immagine della copertina.
+				\item description: descrizione scritta da un utente.
+				\item description\_author: autore della descrizione.
+				\item creation\_datetime: data di creazione del titolo nel database.
+				\item last\_edit\_datetime: data dell'ultima modifica.
+				\item category: categoria del titolo (fisica, matematica, informatica, meccanica, elettronica, economia, automazione, statistica).
+			\end{itemize}
+		\item BookAd: modello che descrive il singolo annuncio per la vendita di un libro. I campi sono:
+			\begin{itemize}
+				\item title: ForeignKey che lega un solo Title ad un BookAd.
+				\item seller: ForeignKey che lega un solo User (il venditore) ad un BookAd.
+				\item description: descrizione dell'annuncio.
+				\item price: prezzo del libro.
+				\item quality\_class: classe di qualità del libro (A, B, C, D).
+				\item publication\_datetime: data di pubblicazione dell'annuncio.
+				\item last\_edit\_datetime: data dell'ultima modifica dell'annuncio.
+				\item photo: ImageField per una foto del libro.
+			\end{itemize}
+		\item Wishlist: modello che descrive l'appartenenza di un determinato annuncio alla wishlist di un utente. I campi sono:
+			\begin{itemize}
+				\item ad: ForeignKey che lega un oggetto di tipo Wishlist ad un solo BookAd, ovvero l'annuncio che fa parte della reale wishlist.
+				\item user: ForeignKey che lega un oggetto di tipo Wishlist ad un solo utente.
+			\end{itemize}
+		\item InterestingTitle: modello che descrive l'appartenenza di un determinato titolo alla lista degli "interesting titles" di un utente. I campi sono:
+			\begin{itemize}
+				\item title: ForeignKey che lega un oggetto di tipo InterestingTitle ad un solo Title, ovvero l'annuncio che fa parte della reale lista "Interesting Titles".
+				\item user: ForeignKey che lega un oggetto di tipo InterestingTitle ad un solo utente.
+			\end{itemize}
+		\item CluseringInfo: modello utilizzato per salvare le informazioni sull'esecuzione dell'algoritmo di clustering. I campi sono: 
+			\begin{itemize}
+				\item run\_time: data e ora della specifica esecuzione dell'algoritmo.
+			\end{itemize}
+	\end{itemize}
+	I modelli sono stati testati tramite l'utilizzo dello script per il riempimento del database e indirettamente con i test effettuati su altre funzioni del sito web.
+	
+	\section{Realizzazione di uno script Python per il riempimento del database}
+	Lo script crea i seguenti oggetti:
+	\begin{itemize}
+		\item 800 utenti e profili studente.
+		\item 150 titoli.
+		\item Un numero casuale tra 0 e 10 di "interesting titles" per ogni studente.
+		\item Un numero casuale tra 10 e 50 di annunci per ogni titolo.
+		\item Un numero casuale tra 0 e 20 di annunci nella wishlist dei singoli studenti.
+	\end{itemize}
+
+	\section{Implementazione delle altre funzionalità}
+	
 	
 \end{document}

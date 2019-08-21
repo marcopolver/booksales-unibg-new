@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.6.30)  20 AUG 2019 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.6.30)  21 AUG 2019 11:09
 entering extended mode
 **./iteration1.tex
 (iteration1.tex
@@ -324,35 +324,47 @@ Overfull \hbox (11.57054pt too wide) in paragraph at lines 40--41
 o di Django e cresciuta notevolmente
  []
 
+[1
+
+]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
-(/home/marco/.miktex/texmfs/install/tex/latex/base/omscmr.fd
+ (/home/marco/.miktex/texmfs/install/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
- [1
+ [2]
+Overfull \hbox (2.87613pt too wide) in paragraph at lines 118--119
+[]\OT1/cmr/m/n/10 ad: ForeignKey che lega un oggetto di tipo Wishlist ad un sol
+o BookAd, ovvero l'annuncio
+ []
 
-] [2]
-(iteration1.aux) ) 
+[3]
+Overfull \hbox (17.79166pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10 I modelli sono stati testati tramite l'utilizzo dello script pe
+r il riempimento del database e indirettamente
+ []
+
+[4] (iteration1.aux) ) 
 Here is how much of TeX's memory you used:
- 3499 strings out of 494864
- 50133 string characters out of 3178303
- 121809 words of memory out of 3000000
- 7088 multiletter control sequences out of 15000+200000
+ 3500 strings out of 494864
+ 50151 string characters out of 3178303
+ 124809 words of memory out of 3000000
+ 7089 multiletter control sequences out of 15000+200000
  12455 words of font info for 48 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,6n,25p,635b,195s stack positions out of 5000i,500n,10000p,200000b,50000s
-</home/marco/.miktex/texmfs/install/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmr17.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb>
-Output written on iteration1.pdf (3 pages, 99804 bytes).
+ 41i,6n,25p,635b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/marco/.miktex/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmbx10.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts
+/cm/cmr17.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></home/marco/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmti10.pfb>
+Output written on iteration1.pdf (5 pages, 106939 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

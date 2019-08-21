@@ -9,7 +9,9 @@
             <p>Hi {{ user.username }}!</p>
         </div>
     {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">login</a>
+        <div class="container">
+            <p>You are not logged in</p>
+            <a href="{% url 'login' %}">login</a>
+        </div>
     {% endif %}
 {% endblock %}
