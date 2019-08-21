@@ -54,7 +54,6 @@ class Title(models.Model):
         ('ELE', 'Elettronica'),
         ('ECO', 'Economia'),
         ('AUT', 'Automazione'),
-        ('STA', 'Statistica')
     )
     category = models.CharField(max_length=3, choices=CATEGORIES)
 

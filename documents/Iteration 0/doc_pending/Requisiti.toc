@@ -1,37 +1,37 @@
-\contentsline {section}{\numberline {0.1}Requisiti e scelte progettuali}{1}% 
-\contentsline {subsection}{\numberline {0.1.1}Obiettivi}{1}% 
-\contentsline {subsection}{\numberline {0.1.2}Codice etico}{2}% 
-\contentsline {subsection}{\numberline {0.1.3}Requisiti funzionali}{2}% 
-\contentsline {section}{\numberline {0.2}Casi d'uso}{8}% 
-\contentsline {subsection}{\numberline {0.2.1}UCA1: Registrazione nuovo amministratore}{10}% 
-\contentsline {subsection}{\numberline {0.2.2}UCA2: Login amministratore}{11}% 
-\contentsline {subsection}{\numberline {0.2.3}UCA3: Accesso pagina personale amministratore}{12}% 
-\contentsline {subsection}{\numberline {0.2.4}UCA5: Gestione segnalazioni}{13}% 
-\contentsline {subsection}{\numberline {0.2.5}UCA6: Comunicazione broadcast}{14}% 
-\contentsline {subsection}{\numberline {0.2.6}UCA7: Gestione richiesta d'assistenza}{15}% 
-\contentsline {subsection}{\numberline {0.2.7}UCS1: Registrazione studente}{16}% 
-\contentsline {subsection}{\numberline {0.2.8}UCS2: Login studente}{18}% 
-\contentsline {subsection}{\numberline {0.2.9}UCS3: Inserimento libro in lista "Wishlist"}{19}% 
-\contentsline {subsection}{\numberline {0.2.10}UCS4: Inserimento titolo in lista "Titoli d'interesse"}{19}% 
-\contentsline {subsection}{\numberline {0.2.11}UCS5: Accesso pagina persinale studente}{20}% 
-\contentsline {subsection}{\numberline {0.2.12}UCS6: Modifica impostazioni personali}{21}% 
-\contentsline {subsection}{\numberline {0.2.13}UCS7: Modifica pagina titolo}{22}% 
-\contentsline {subsection}{\numberline {0.2.14}UCS8: Recensione titolo}{22}% 
-\contentsline {subsection}{\numberline {0.2.15}UCS9: Segnalazione contenuto}{23}% 
-\contentsline {subsection}{\numberline {0.2.16}UCS10: Richiesta d'assistenza}{24}% 
-\contentsline {subsection}{\numberline {0.2.17}UCS11: Ricerca annuncio}{25}% 
-\contentsline {subsection}{\numberline {0.2.18}UCS12: Ricerca studente}{26}% 
-\contentsline {subsection}{\numberline {0.2.19}UCS13: Ricerca pagina titolo}{27}% 
-\contentsline {subsection}{\numberline {0.2.20}UCS14: Inserimento annuncio libro in vendita}{28}% 
-\contentsline {subsection}{\numberline {0.2.21}UCS15: Inserimento nuovo titolo}{29}% 
-\contentsline {subsection}{\numberline {0.2.22}UCS16: Modifica annuncio libro in vendita}{30}% 
-\contentsline {subsection}{\numberline {0.2.23}UCS17: Notifica avvenuta vendita libro}{32}% 
-\contentsline {subsection}{\numberline {0.2.24}UCS18: Recensione studente}{33}% 
-\contentsline {subsubsection}{UCS18.1: Recensione acquirente}{33}% 
-\contentsline {subsubsection}{UCS18.2: Recensione venditore}{34}% 
-\contentsline {subsection}{\numberline {0.2.25}UCS19: Conferma acquisto libro}{35}% 
-\contentsline {section}{\numberline {0.3}Class diagram}{36}% 
-\contentsline {section}{\numberline {0.4}Scelte progettuali}{36}% 
-\contentsline {section}{\numberline {0.5}Toolchain}{37}% 
-\contentsline {section}{\numberline {0.6}Algoritmo: il clustering}{37}% 
-\contentsline {subsection}{\numberline {0.6.1}K-means clustering}{37}% 
+\contentsline {section}{\numberline {0.1}Requisiti e scelte progettuali}{1}
+\contentsline {subsection}{\numberline {0.1.1}Obiettivi}{1}
+\contentsline {subsection}{\numberline {0.1.2}Codice etico}{2}
+\contentsline {subsection}{\numberline {0.1.3}Requisiti funzionali}{2}
+\contentsline {section}{\numberline {0.2}Casi d'uso}{8}
+\contentsline {subsection}{\numberline {0.2.1}UCA1: Registrazione nuovo amministratore}{10}
+\contentsline {subsection}{\numberline {0.2.2}UCA2: Login amministratore}{11}
+\contentsline {subsection}{\numberline {0.2.3}UCA3: Accesso pagina personale amministratore}{12}
+\contentsline {subsection}{\numberline {0.2.4}UCA5: Gestione segnalazioni}{13}
+\contentsline {subsection}{\numberline {0.2.5}UCA6: Comunicazione broadcast}{14}
+\contentsline {subsection}{\numberline {0.2.6}UCA7: Gestione richiesta d'assistenza}{15}
+\contentsline {subsection}{\numberline {0.2.7}UCS1: Registrazione studente}{16}
+\contentsline {subsection}{\numberline {0.2.8}UCS2: Login studente}{18}
+\contentsline {subsection}{\numberline {0.2.9}UCS3: Inserimento libro in lista "Wishlist"}{19}
+\contentsline {subsection}{\numberline {0.2.10}UCS4: Inserimento titolo in lista "Titoli d'interesse"}{19}
+\contentsline {subsection}{\numberline {0.2.11}UCS5: Accesso pagina persinale studente}{20}
+\contentsline {subsection}{\numberline {0.2.12}UCS6: Modifica impostazioni personali}{21}
+\contentsline {subsection}{\numberline {0.2.13}UCS7: Modifica pagina titolo}{22}
+\contentsline {subsection}{\numberline {0.2.14}UCS8: Recensione titolo}{22}
+\contentsline {subsection}{\numberline {0.2.15}UCS9: Segnalazione contenuto}{23}
+\contentsline {subsection}{\numberline {0.2.16}UCS10: Richiesta d'assistenza}{24}
+\contentsline {subsection}{\numberline {0.2.17}UCS11: Ricerca annuncio}{25}
+\contentsline {subsection}{\numberline {0.2.18}UCS12: Ricerca studente}{26}
+\contentsline {subsection}{\numberline {0.2.19}UCS13: Ricerca pagina titolo}{27}
+\contentsline {subsection}{\numberline {0.2.20}UCS14: Inserimento annuncio libro in vendita}{28}
+\contentsline {subsection}{\numberline {0.2.21}UCS15: Inserimento nuovo titolo}{29}
+\contentsline {subsection}{\numberline {0.2.22}UCS16: Modifica annuncio libro in vendita}{30}
+\contentsline {subsection}{\numberline {0.2.23}UCS17: Notifica avvenuta vendita libro}{32}
+\contentsline {subsection}{\numberline {0.2.24}UCS18: Recensione studente}{33}
+\contentsline {subsubsection}{UCS18.1: Recensione acquirente}{33}
+\contentsline {subsubsection}{UCS18.2: Recensione venditore}{34}
+\contentsline {subsection}{\numberline {0.2.25}UCS19: Conferma acquisto libro}{35}
+\contentsline {section}{\numberline {0.3}Class diagram}{36}
+\contentsline {section}{\numberline {0.4}Scelte progettuali}{36}
+\contentsline {section}{\numberline {0.5}Toolchain}{37}
+\contentsline {section}{\numberline {0.6}Algoritmo: il clustering}{37}
+\contentsline {subsection}{\numberline {0.6.1}K-means clustering}{37}

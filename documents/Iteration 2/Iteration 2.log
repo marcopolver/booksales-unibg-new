@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  21 AUG 2019 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  21 AUG 2019 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Requisiti.tex
-(./Requisiti.tex
+**"Iteration 2.tex"
+(./Iteration 2.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/report.cls
@@ -189,21 +189,21 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen130
 \Gm@dimlist=\toks24
 )
-(./Requisiti.aux)
-\openout1 = `Requisiti.aux'.
+(./Iteration 2.aux)
+\openout1 = `"Iteration 2.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -304,400 +304,69 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Requ
-isiti.toc)
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Iter
+ation 2.toc)
 \tf@toc=\write3
-\openout3 = `Requisiti.toc'.
+\openout3 = `"Iteration 2.toc"'.
 
+<Cluster.png, id=8, 350.30875pt x 237.88875pt>
+File: Cluster.png Graphic file (type png)
+<use Cluster.png>
+Package pdftex.def Info: Cluster.png  used on input line 29.
+(pdftex.def)             Requested size: 315.27496pt x 214.09789pt.
 
 [1
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+ <./Cluster.png (PNG copy)>]
+<elbow_method.png, id=14, 824.07875pt x 524.96124pt>
+File: elbow_method.png Graphic file (type png)
+<use elbow_method.png>
+Package pdftex.def Info: elbow_method.png  used on input line 61.
+(pdftex.def)             Requested size: 412.03836pt x 262.47998pt.
+ [2 <./elbow_method.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]\OT1/cmr/m/n/10 Registrazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]\OT1/cmr/m/n/10 Registrazione
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 nuovo am-min-is-tra-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]\OT1/cmr/m/n/10 Accesso am-min-is-
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 56--82
-[][] 
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\OT1/cmr/m/n/10 Visualizzazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\OT1/cmr/m/n/10 libri con-sigliati
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 102--103
-[]\OT1/cmr/m/n/10 Interesse mostrato es-plici-ta-mente dallo stu-dente
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]\OT1/cmr/m/n/10 Inserimento titolo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-\OT1/cmr/m/n/10 in lista "Titoli
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 83--109
-[][] 
- []
-
-[3]
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 110--130
-[][] 
- []
-
-[4] [5]
-Underfull \hbox (badness 1406) in paragraph at lines 133--133
-[]\OT1/cmr/m/n/10 Inserimento di un
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[]\OT1/cmr/m/n/10 Modifica in-for-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-\OT1/cmr/m/n/10 mazioni per-son-ali
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 160--160
-[]\OT1/cmr/m/n/10 Modifica da parte di uno stu-dente delle in-for-mazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 131--162
-[][] 
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-[]\OT1/cmr/m/n/10 Ricerca pag-ina
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]\OT1/cmr/m/n/10 Modifica pag-ina
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 181--183
-\OT1/cmr/m/n/10 dell'utente che ^^Re stato in-di-cato dal ven-di-tore quale
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 164--191
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]\OT1/cmr/m/n/10 Recensione ven-di-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]\OT1/cmr/m/n/10 Recensione ac-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]\OT1/cmr/m/n/10 Segnalazione con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\OT1/cmr/m/n/10 Gestione seg-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]\OT1/cmr/m/n/10 Comunicazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 192--201
-[][] 
- []
-
-[7]
-Underfull \hbox (badness 1132) in paragraph at lines 204--204
-[]\OT1/cmr/m/n/10 Richiesta di as-sis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]\OT1/cmr/m/n/10 Gestione richi-esta
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 202--207
-[][] 
- []
-
-<./images/gua_uc.jpeg, id=35, 614.7768pt x 234.8775pt>
-File: ./images/gua_uc.jpeg Graphic file (type jpg)
-<use ./images/gua_uc.jpeg>
-Package pdftex.def Info: ./images/gua_uc.jpeg  used on input line 213.
-(pdftex.def)             Requested size: 483.70776pt x 184.80214pt.
-
-Overfull \hbox (56.91641pt too wide) in paragraph at lines 213--214
- [][] 
- []
-
-[8]
-<./images/st_uc.jpeg, id=39, 794.97pt x 594.0594pt>
-File: ./images/st_uc.jpeg Graphic file (type jpg)
-<use ./images/st_uc.jpeg>
-Package pdftex.def Info: ./images/st_uc.jpeg  used on input line 219.
-(pdftex.def)             Requested size: 483.70584pt x 361.46017pt.
-
-Overfull \hbox (56.91449pt too wide) in paragraph at lines 219--220
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-[]\OT1/cmr/m/n/10 L'indirizzo email deve es-sere for-mat-tato cor-ret-ta-mente
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 224--260
-[] 
- []
-
-[9 <./images/gua_uc.jpeg> <./images/st_uc.jpeg>] [10]
-Underfull \hbox (badness 1264) in paragraph at lines 294--295
-[]\OT1/cmr/m/n/10 Se i dati in-ser-iti sono cor-retti, il sis-tema per-me-tte l
-'accesso
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 274--298
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 300--324
-[] 
- []
-
-[11]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 326--350
-[] 
- []
-
-[12]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 352--379
-[] 
- []
-
-[13]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 381--406
-[] 
- []
-
-[14]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 408--447
-[] 
- []
-
-[15] [16]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 474--506
-[] 
- []
-
-[17]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 508--525
-[] 
- []
-
-[18]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 527--544
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 546--563
-[] 
- []
-
-[19]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 565--601
-[] 
- []
-
-[20]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 603--625
-[] 
- []
-
-[21]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 627--650
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 652--680
-[] 
- []
-
-[22]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 682--710
-[] 
- []
-
-[23]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 712--746
-[] 
- []
-
-[24]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 748--789
-[] 
- []
-
-[25]
-Overfull \vbox (6.12799pt too high) has occurred while \output is active []
-
-
-[26]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 791--820
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 822--859
-[] 
- []
-
-[27]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 861--896
-[] 
- []
-
-[28]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 898--934
-[] 
- []
-
-[29] [30]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 948--986
-[] 
- []
-
-[31]
-Underfull \hbox (badness 4132) in paragraph at lines 1013--1014
-[]\OT1/cmr/m/n/10 Comando per la scrit-tura di una re-cen-sione nei con-fronti
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 989--1030
-[] 
- []
-
-[32]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1032--1073
-[] 
- []
-
-[33]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1075--1114
-[] 
- []
-
-[34]
-<./images/class_diagram.jpeg, id=122, 735.7086pt x 731.3724pt>
-File: ./images/class_diagram.jpeg Graphic file (type jpg)
-<use ./images/class_diagram.jpeg>
-Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 1118.
-(pdftex.def)             Requested size: 483.70566pt x 480.85475pt.
-
-Overfull \hbox (56.9143pt too wide) in paragraph at lines 1118--1119
- [][] 
- []
-
-[35] [36 <./images/class_diagram.jpeg>]
-<./images/elbow_method.png, id=130, 824.07875pt x 524.96124pt>
-File: ./images/elbow_method.png Graphic file (type png)
-<use ./images/elbow_method.png>
-Package pdftex.def Info: ./images/elbow_method.png  used on input line 1175.
-(pdftex.def)             Requested size: 412.03836pt x 262.47998pt.
- [37] [38 <./images/elbow_method.png>]
-(./Requisiti.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+ [3]
+(./Iteration 2.aux) ) 
 Here is how much of TeX's memory you used:
- 3531 strings out of 492649
- 50472 string characters out of 6129622
- 133045 words of memory out of 5000000
- 7342 multiletter control sequences out of 15000+600000
+ 3513 strings out of 492649
+ 50083 string characters out of 6129622
+ 125045 words of memory out of 5000000
+ 7330 multiletter control sequences out of 15000+600000
  12455 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,584b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b>
-Output written on Requisiti.pdf (39 pages, 1146383 bytes).
+ 41i,7n,25p,298b,218s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
+pfb>
+Output written on "Iteration 2.pdf" (4 pages, 326032 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 65 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
