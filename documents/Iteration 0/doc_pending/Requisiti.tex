@@ -194,16 +194,8 @@
 		RE1&Recensione venditore&Inserimento da parte di un utente acquirente di una recensione del venditore di uno specifico libro. Questo dovrà risultare possibile soltanto dopo la conferma dell'acquisto di un libro. La recensione dovrà contenere un valore intero compreso tra 0 e 5 (indicato tramite stelle) ed un commento.\\ \hline
 		RE2&Recensione acquirente&Inserimento da parte di un utente venditore di una recensione dell'acquirente di uno specifico libro. Questo dovrà risultare possibile soltanto dopo la conferma dell'acquisto di un libro. La recensione dovrà contenere un valore intero compreso tra 0 e 5 (indicato tramite stelle) ed un commento.\\ \hline
 		RE3&Recensione titolo&Inserimento da parte di un utente qualsiasi di una recensione di un qualsiasi titolo. La recensione dovrà contenere un valore intero compreso tra 0 e 5 (indicato tramite stelle) ed un commento.\\ \hline
-		S1&Segnalazione contenuto&Qualsiasi contenuto (inserzione, pagina utente, pagina di un titolo, recensione) deve risultare segnalabile da un qualsiasi utente. Durante la segnalazione di un contenuto, l'utente segnalatore deve specificare con un commento il motivo della segnalazione e specificare tramite selezione quale delle regole etiche del servizio è stata potenzialmente violata.\\ \hline
-		S2&Gestione segnalazioni&Gli amministratori devono avere accesso ad una pagina contenente una lista di segnalazioni dalla quale poter analizzare ogni singolo caso e decidere se eliminare un determinato contenuto segnalato o ritenere la segnalazione irrilevante. In caso di segnalazione accettata, l'utente autore del contenuto eliminato deve essere notificato dell'eliminazione del contenuto via email. A fronte di 3 segnalazioni nei confronti del medesimo utente accettate, l'utente in questione deve essere sospeso per 3 mesi.\\ \hline
-		B1&Comunicazioni broadcast&Invio di un messaggio diretto a tutti gli utenti del servizio da parte di un amministratore. Il sistema deve provvedere ad inviare il testo della comunicazione via email a tutti gli utenti.\\ \hline
 	\end{tabular}
 
-	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
-		Codice requisito&Nome&Descrizione\\ \hline
-		AS1&Richiesta di assistenza&Richiesta di assistenza effettuata da un utente. Ogni richiesta deve includere un titolo e una descrizione del problema. Ogni richiesta viene gestita come un ticket avente un codice univoco.\\ \hline
-		AS2&Gestione richiesta d'assistenza&Ogni amministratore deve avere la possibilità di rispondere ad una richiesta d'assistenza. Nel momento in cui una richiesta viene gestita da uno specifico amministratore, gli altri amministratori non devono più avere la possibilità di gestirla. Successivamente alla gestione di una richiesta d'assistenza, la quale consiste in una risposta testuale da parte dell'amministratore, l'autore della richiesta viene notificato via email dell'avvenuta gestione della richiesta: l'email deve contenere il testo della risposta.
-	\end{tabular}
 	
 	\section{Casi d'uso}
 	Di seguito sono riportati i diagrammi dei casi d'uso relativo ad amministratori, studenti ed utenti generici.
@@ -322,88 +314,7 @@
 		\end{enumerate}
 	\end{tabular}
 	
-	\subsection{UCA5: Gestione segnalazioni}
-	\begin{tabular}{lp{0.8\textwidth}}
-		\textbf{Descrizione}&Un amministratore vuole gestire le segnalazioni effettuate dagli studenti.\\
-		\\
-		\textbf{Requisiti coperti}&S2\\
-		\\
-		\textbf{Attori coinvolti}&Amministratore\\
-		\\
-		\textbf{Precondizioni}&L'amministratore ha effettuato l'accesso.\\
-		\\
-		\textbf{Postcondizioni}&Il sistema permette all'amministratore di accedere alle segnalazioni e gestirle.\\
-		\\
-		\textbf{Processo}&Di seguito è descritto il processo:
-		\begin{enumerate}
-			\item L'amministratore accede alla pagina di gestione delle segnalazioni.
-			\item Il sistema mostra le segnalazioni degli studenti che non sono ancora state gestite da alcun amministratore.
-			\item L'amministratore può accedere ad una qualsiasi segnalazione visualizzata.
-			\item Il sistema mostra username dello studente che ha effettuato la segnalazione, data e ora della segnalazione, la regola etica non rispettata, una descrizione della segnalazione e un link al contenuto segnalato. 
-			\item A questo punto l'amministratore può decidere di farsi carico della segnalazione e prendere una decisione sul contenuto segnalato:
-			\begin{itemize}
-				\item Se l'amministratore decide di accettare la segnalazione, il sistema elimina il contenuto segnalato, invia una email al proprietario per notificarlo dell'avvenuto e nel database incrementa di 1 il campo relativo alle segnalazioni accettate nei confronti di contenuti di sua proprietà. Quando questo campo arriva al valore 3, lo studente viene sospeso dal servizio per 3 mesi.
-				\item Se l'amministratore decide di rifiutare la segnalazione, deve scrivere in un campo mostrato dal sistema la motivazione del rifiuto, la quale viene poi inviata via email allo studente che ha effettuato la segnalazione.
-			\end{itemize}
-		\end{enumerate}
-	\end{tabular}
 	
-	\subsection{UCA6: Comunicazione broadcast}
-	\begin{tabular}{lp{0.8\textwidth}}
-		\textbf{Descrizione}&Un amministratore intende inviare un messaggio a tutti gli studenti che usufruiscono del servizio.\\
-		\\
-		\textbf{Requisiti coperti}&B1\\
-		\\
-		\textbf{Attori coinvolti}&Amministratore\\
-		\\
-		\textbf{Precondizioni}&L'amministratore ha effettuato l'accesso.\\
-		\\
-		\textbf{Postcondizioni}&Un messaggio viene inviato a tutti gli studenti iscritti al servizio.\\
-		\\
-		\textbf{Processo}&Di seguito è descritto il processo:
-		\begin{enumerate}
-			\item L'amministratore accede alla pagina per l'invio di messaggi broadcast.
-			\item Il sistema mostra i seguenti campi da compilare:
-			\begin{itemize}
-				\item Oggetto: in questo campo l'amministratore deve inserire una breve introduzione al messaggio.
-				\item Messaggio: in questo campo l'amministratore deve inserire il corpo del messaggio.
-			\end{itemize}
-			\item L'amministratore compila i campi ed esegue il comando di invio del messaggio.
-			\item Il sistema verifica che entrambi i campi di cui sopra siano stati compilati:
-			\begin{itemize}
-				\item Se i campi sono stati compilati, il sistema inserisce il messaggio nel database ed invia a tutti gli studenti registrati una mail contenente il messaggio.
-				\item Se uno dei due campi non è stato compilato, il sistema non effettua né l'invio del messaggio né la sua registrazione nel database e mostra un riquadro rosso con la scritta "Entrambi i campi devono essere compilati".
-			\end{itemize}
-		\end{enumerate}
-	\end{tabular}
-	
-	\subsection{UCA7: Gestione richiesta d'assistenza}
-	\begin{tabular}{lp{0.8\textwidth}}
-		\textbf{Descrizione}&Un amministratore intende farsi carico di una richiesta d'assistenza di uno studente.\\
-		\\
-		\textbf{Requisiti coperti}&AS2\\
-		\\
-		\textbf{Attori coinvolti}&Amministratore\\
-		\\
-		\textbf{Precondizioni}&L'amministratore ha effettuato l'accesso.\\
-		\\
-		\textbf{Postcondizioni}&Una richiesta d'assistenza viene gestita.\\
-		\\
-		\textbf{Processo}&Di seguito è descritto il processo:
-		\begin{enumerate}
-			\item L'amministratore accede alla pagina relativa alle richieste d'assistenza degli studenti.
-			\item Il sistema mostra le richieste d'assistenza che non sono ancora state gestite da alcun amministratore.
-			\item L'amministratore può accedere ad una qualsiasi richiesta d'assistenza visualizzata.
-			\item Il sistema mostra username dello studente che ha effettuato la richiesta, data e ora della richiesta d'assistenza e una descrizione testuale del problema da risolvere.
-			\item L'amministratore inserisce nell'apposito campo mostrato dal sistema un messaggio di risposta e richiede l'invio dello stesso.
-			\item Il sistema verifica che il campo relativo alla risposta da inviare non sia vuoto:
-			\begin{itemize}
-				\item Se il campo non è vuoto, il sistema memorizza il messaggio nel database ed invia il messaggio tramite email allo studente che ha effettuato alla richiesta.
-				\item Se il campo è vuoto, il sistema non effettua né la memorizzazione del messaggio né il suo invio e mostra un riquadro rosso con la scritta "Messaggio mancante".
-			\end{itemize}
-		\end{enumerate}
-	\end{tabular}
-
 	\subsection{UCS1: Registrazione studente}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente si registra al servizio.\\
@@ -648,66 +559,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UCS9: Segnalazione contenuto}
-	\begin{tabular}{lp{0.8\textwidth}}
-		\textbf{Descrizione}&Uno studente vuole segnalare un contenuto pubblicato sul sito web.\\
-		\\
-		\textbf{Requisiti coperti}&S1\\
-		\\
-		\textbf{Attori coinvolti}&Studente\\
-		\\
-		\textbf{Precondizioni}&Lo studente ha effettuato il login ed ha aperto la pagina relativa ad uno specifico contenuto (profilo di uno studente, annuncio, pagina relativa ad un titolo, recensione di uno studente, recensione di un titolo).\\
-		\\
-		\textbf{Postcondizioni}&Il sistema permette allo studente di segnalare la violazione di una delle regole etiche del servizio.\\
-		\\
-		\textbf{Processo}&Di seguito è descritto il processo:
-		\begin{enumerate}
-			\item Lo studente accede al contenuto che intende segnalare e ne richiede la segnalazione.
-			\item Il sistema mostra una pagina contenente un elenco di campi che devono essere compilati:
-			\begin{itemize}
-				\item Regola etica potenzialmente violata: si tratta di un campo con selezione guidata.
-				\item Descrizione della potenziale violazione del regolamento.
-			\end{itemize}
-			\item Lo studente compila i campi e richiede l'invio della segnalazione.
-			\item Il sistema verifica che entrambi i campi siano stati compilati.
-			\item Sulla base del risultato della verifica descritta al passo precedente, il sistema si comporta in modi diversi:
-			\begin{itemize}
-				\item Se entrambi i campi sono stati compilati, il sistema salva la segnalazione nel database e mostra un riquadro verde con la scritta "Segnalazione inviata".
-				\item Se almeno uno dei campi non è stato compilato, il sistema non salva la segnalazione e mostra un riquadro rosso con la scritta "Tutti i campi devono essere compilati".
-			\end{itemize}
-		\end{enumerate}
-	\end{tabular}
-
-	\subsection{UCS10: Richiesta d'assistenza}
-	\begin{tabular}{lp{0.8\textwidth}}
-		\textbf{Descrizione}&Uno studente vuole effettuare una richiesta d'assistenza.\\
-		\\
-		\textbf{Requisiti coperti}&AS1\\
-		\\
-		\textbf{Attori coinvolti}&Studente\\
-		\\
-		\textbf{Precondizioni}&Lo studente ha effettuato il login.\\
-		\\
-		\textbf{Postcondizioni}&Il sistema inoltra agli amministratori la richiesta d'assistenza.\\
-		\\
-		\textbf{Processo}&Di seguito è descritto il processo:
-		\begin{enumerate}
-			\item Lo studente accede alla pagina relativa alle richieste d'assistenza.
-			\item Il sistema mostra una pagina contenente un elenco di campi che devono essere compilati:
-			\begin{itemize}
-				\item Titolo: descrizione riassuntiva del problema riscontrato.
-				\item Descrizione completa del problema.
-			\end{itemize}
-			\item Lo studente compila i campi e richiede l'invio della richiesta d'assistenza.
-			\item Il sistema verifica che entrambi i campi siano stati compilati.
-			\item Sulla base del risultato della verifica descritta al passo precedente, il sistema si comporta in modi diversi:
-			\begin{itemize}
-				\item Se entrambi i campi sono stati compilati, il sistema salva la richiesta d'assistenza nel database e mostra un riquadro verde con la scritta "Richiesta d'assistenza effettuata con successo".
-				\item Se almeno uno dei campi non è stato compilato, il sistema non salva la richiesta e mostra un riquadro rosso con la scritta "Tutti i campi devono essere compilati".
-			\end{itemize}
-		\end{enumerate}
-	\end{tabular}
-
+	
 	\subsection{UCS11: Ricerca annuncio}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente effettua la ricerca di un libro tra gli annunci pubblicati.\\
@@ -1138,48 +990,8 @@
 		\item Github: versioning dell'applicazione.
 	\end{itemize}
 	
-	\section{Algoritmo: il clustering}
-	Il clustering è un algoritmo di apprendimento non supervisionato (machine learning) che ha l'obiettivo di ricercare gruppi di oggetti tali che  
-	gli oggetti appartenenti a un gruppo siano “simili” tra loro e differenti dagli oggetti negli altri gruppi. Dunque, in statistica, è una tecnica di 
-        analisi multivariata dei dati volta al raggruppamento di elementi omogenei in un insieme di dati.\\
-        Oggi le tecniche di clustering sono diffuse in diversi campi applicativi, tra i quali: il marketing, l'analisi del territorio, le assicurazioni  gli studi sismici e l'image processing.  Uno degli usi più comuni che viene fatto dei cluster, in ambito economico, 
-        è proprio la segmentazione di mercato, che può essere riferita a consumatori o a categorie di prodotti con lo scopo di valutare le caratteristiche e i comportamenti dei consumatori, personalizzando l’offerta
-        e incrementando dunque la quantità di prodotti venduti.
-        
-        		\subsection{K-means clustering}
-        		Il k-means clustering è l'algoritmo di clustering più utilizzato sia in ambito accademico che in ambito industriale e funziona nel seguente modo.
-        		\begin{enumerate}
-        		\item Scegliere il numero di k clusters in cui raggruppare il dataset.
-        		\item Selezionare casualmente k centroidi iniziali (con centroide si intende il centro geometrico di ogni cluster).
-        		\item Calcolare la distanza tra ogni centroide e tutte le osservazioni.
-        		\item Assegnare ognuna delle osservazione al cluster rappresentato dal centroide più vicino.
-        		\item Ricalcolare la posizione dei centroidi come la posizione media delle osservazioni appartenenti al cluster che il centroide rappresenta.
-        		\item Ripetere dal punto 3, finchè nessuna osservazione cambierà più il proprio cluster di appartenenza.
-        		\end{enumerate}
-		\textbf{Problema}: come scegliere a priori il numero di clusters?\\
-		La soluzione a questo problema sta nel testare in modo iterativo più valori di k e confrontarli. 
-		Per valutare il risultato viene analizzata la funzione di costo:
-		\[
-		J(k)=\frac{1}{k}
-		\sum_{i=1}^k
-		\frac{1}{n}
-		\sum_{j=1}^n
-		\abs{p\textsubscript{j}-c\textsubscript{i}}
-		\]
-		Tale funzione di costo è la media delle distanze medie delle osservazioni dal centroide del proprio cluster. E' facile notare che aumentando il numero di
-		cluster diminuirà, di conseguenza, la media delle distanze delle osservazioni dai centroidi; dunque la funzione di costo è decrescente.\\
-		L'\textit{elbow method} è un metodo ''grafico'' che consente di determinare il numero di cluster ideale valutando la pendenza della funzione di costo.
-		Come si evince dalla figura 4, il valore ottimo di k è prossimo al punto dove la funzione di costo inizia a decrescere più lentamente.
-		\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{elbow_method.png}
-		\caption{Elbow method}
-		\end{figure}
+
 		
-		
-        
-       
-        
-        
+     
         
 \end{document}

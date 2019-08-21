@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  21 AUG 2019 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.16)  21 AUG 2019 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -450,254 +450,188 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--195
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]\OT1/cmr/m/n/10 Segnalazione con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\OT1/cmr/m/n/10 Gestione seg-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]\OT1/cmr/m/n/10 Comunicazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 192--201
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 192--198
 [][] 
  []
 
 [7]
-Underfull \hbox (badness 1132) in paragraph at lines 204--204
-[]\OT1/cmr/m/n/10 Richiesta di as-sis-
- []
+<./images/gua_uc.jpg, id=35, 1656.1875pt x 1279.78125pt>
+File: ./images/gua_uc.jpg Graphic file (type jpg)
+<use ./images/gua_uc.jpg>
+Package pdftex.def Info: ./images/gua_uc.jpg  used on input line 205.
+(pdftex.def)             Requested size: 441.84436pt x 341.42517pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]\OT1/cmr/m/n/10 Gestione richi-esta
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 202--207
-[][] 
- []
-
-<./images/gua_uc.jpeg, id=35, 614.7768pt x 234.8775pt>
-File: ./images/gua_uc.jpeg Graphic file (type jpg)
-<use ./images/gua_uc.jpeg>
-Package pdftex.def Info: ./images/gua_uc.jpeg  used on input line 213.
-(pdftex.def)             Requested size: 483.70776pt x 184.80214pt.
-
-Overfull \hbox (56.91641pt too wide) in paragraph at lines 213--214
+Overfull \hbox (15.05301pt too wide) in paragraph at lines 205--206
  [][] 
  []
 
-[8]
-<./images/st_uc.jpeg, id=39, 794.97pt x 594.0594pt>
-File: ./images/st_uc.jpeg Graphic file (type jpg)
-<use ./images/st_uc.jpeg>
-Package pdftex.def Info: ./images/st_uc.jpeg  used on input line 219.
-(pdftex.def)             Requested size: 483.70584pt x 361.46017pt.
+<./images/st_uc.jpg, id=36, 1656.1875pt x 1279.78125pt>
+File: ./images/st_uc.jpg Graphic file (type jpg)
+<use ./images/st_uc.jpg>
+Package pdftex.def Info: ./images/st_uc.jpg  used on input line 211.
+(pdftex.def)             Requested size: 483.69371pt x 373.76332pt.
 
-Overfull \hbox (56.91449pt too wide) in paragraph at lines 219--220
+Overfull \hbox (56.90236pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+[8 <./images/gua_uc.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 []\OT1/cmr/m/n/10 L'indirizzo email deve es-sere for-mat-tato cor-ret-ta-mente
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 224--260
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 216--252
 [] 
  []
 
-[9 <./images/gua_uc.jpeg> <./images/st_uc.jpeg>] [10]
-Underfull \hbox (badness 1264) in paragraph at lines 294--295
+[9 <./images/st_uc.jpg>] [10]
+Underfull \hbox (badness 1264) in paragraph at lines 286--287
 []\OT1/cmr/m/n/10 Se i dati in-ser-iti sono cor-retti, il sis-tema per-me-tte l
 'accesso
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 274--298
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 266--290
 [] 
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 300--324
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 292--316
 [] 
  []
 
 [11]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 326--350
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 319--358
 [] 
  []
 
-[12]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 352--379
-[] 
- []
-
-[13]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 381--406
+[12] [13]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 385--417
 [] 
  []
 
 [14]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 408--447
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 419--436
 [] 
  []
 
-[15] [16]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 474--506
+[15]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 438--455
+[] 
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 457--474
+[] 
+ []
+
+[16]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 476--512
 [] 
  []
 
 [17]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 508--525
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 514--536
 [] 
  []
 
 [18]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 527--544
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 538--561
 [] 
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 546--563
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 564--598
 [] 
  []
 
 [19]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 565--601
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 600--641
 [] 
  []
 
 [20]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 603--625
-[] 
- []
+Overfull \vbox (6.12799pt too high) has occurred while \output is active []
+
 
 [21]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 627--650
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 643--672
 [] 
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 652--680
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 674--711
 [] 
  []
 
 [22]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 682--710
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 713--748
 [] 
  []
 
 [23]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 712--746
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 750--786
 [] 
  []
 
-[24]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 748--789
+[24] [25]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 800--838
 [] 
  []
-
-[25]
-Overfull \vbox (6.12799pt too high) has occurred while \output is active []
-
 
 [26]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 791--820
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 822--859
-[] 
- []
-
-[27]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 861--896
-[] 
- []
-
-[28]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 898--934
-[] 
- []
-
-[29] [30]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 948--986
-[] 
- []
-
-[31]
-Underfull \hbox (badness 4132) in paragraph at lines 1013--1014
+Underfull \hbox (badness 4132) in paragraph at lines 865--866
 []\OT1/cmr/m/n/10 Comando per la scrit-tura di una re-cen-sione nei con-fronti
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 989--1030
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 841--882
 [] 
  []
 
-[32]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1032--1073
+[27]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 884--925
 [] 
  []
 
-[33]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1075--1114
+[28]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 927--966
 [] 
  []
 
-[34]
-<./images/class_diagram.jpeg, id=122, 735.7086pt x 731.3724pt>
+[29]
+<./images/class_diagram.jpeg, id=106, 735.7086pt x 731.3724pt>
 File: ./images/class_diagram.jpeg Graphic file (type jpg)
 <use ./images/class_diagram.jpeg>
-Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 1118.
+Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 970.
 (pdftex.def)             Requested size: 483.70566pt x 480.85475pt.
 
-Overfull \hbox (56.9143pt too wide) in paragraph at lines 1118--1119
+Overfull \hbox (56.9143pt too wide) in paragraph at lines 970--971
  [][] 
  []
 
-[35] [36 <./images/class_diagram.jpeg>]
-<./images/elbow_method.png, id=130, 824.07875pt x 524.96124pt>
-File: ./images/elbow_method.png Graphic file (type png)
-<use ./images/elbow_method.png>
-Package pdftex.def Info: ./images/elbow_method.png  used on input line 1175.
-(pdftex.def)             Requested size: 412.03836pt x 262.47998pt.
- [37] [38 <./images/elbow_method.png>]
-(./Requisiti.aux) ) 
+[30] [31 <./images/class_diagram.jpeg>] [32] (./Requisiti.aux) ) 
 Here is how much of TeX's memory you used:
- 3531 strings out of 492649
- 50472 string characters out of 6129622
+ 3524 strings out of 492649
+ 50299 string characters out of 6129622
  133045 words of memory out of 5000000
- 7342 multiletter control sequences out of 15000+600000
+ 7336 multiletter control sequences out of 15000+600000
  12455 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,584b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
-b>
-Output written on Requisiti.pdf (39 pages, 1146383 bytes).
+ 41i,9n,25p,522b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Requisiti.pdf (33 pages, 748609 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 141 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
