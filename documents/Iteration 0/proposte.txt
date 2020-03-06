@@ -1,9 +1,0 @@
-IDEE:
-	- Algoritmo di clustering preso da internet. 
-	- Implementazione da modificare per usare metodo del gomito.
-	- Wishlist: +1, Titoli d'interesse: +5. Se un libro dei titoli d'interesse ha anche
-	  un'instanza nella wishlist, quest'ultima non viene contata.
-	- IPOTESI: mettere in automatico un titolo tra i titoli d'interesse se uno studente
-	  mette almeno 'n' libri legati a quel titolo nella wishlist.
-	- Prendere i libri seguiti (wishlist o titoli d'interesse) dagli altri studenti dello
-   	  stesso cluster dello studente che ha effettuato l'accesso.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.6.30)  20 AUG 2019 09:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.6.30)  6 MAR 2020 16:53
 entering extended mode
 **./Requisiti.tex
 (Requisiti.tex
@@ -309,544 +309,398 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 
 (/home/marco/.miktex/texmfs/install/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/cmr/m/n/10 Registrazione
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]\OT1/cmr/m/n/10 Registrazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []\OT1/cmr/m/n/10 Accesso al servizio da parte di uno studente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
 \OT1/cmr/m/n/10 precedentemente registrato tramite inserimento di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]\OT1/cmr/m/n/10 Registrazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 nuovo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]\OT1/cmr/m/n/10 Accesso
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 56--82
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 41--60
 [][] 
  []
 
-[2]
-Underfull \hbox (badness 1152) in paragraph at lines 94--95
+
+Underfull \hbox (badness 1152) in paragraph at lines 70--71
 []\OT1/cmr/m/n/10 Classe B: libro intatto con sottolineature e
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 95--96
+Underfull \hbox (badness 3312) in paragraph at lines 71--72
 []\OT1/cmr/m/n/10 Classe C: libro con piccoli segni d'usura,
  []
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 96--97
+Underfull \hbox (badness 3547) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10 Classe D: libro con pagine stropicciate o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []\OT1/cmr/m/n/10 Visualizzazione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\OT1/cmr/m/n/10 libri consigliati
+Underfull \hbox (badness 1783) in paragraph at lines 76--77
+[]\OT1/cmr/m/n/10 Visualizzazione nella pagina "Suggested ads" di libri
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 102--103
+Underfull \hbox (badness 3009) in paragraph at lines 78--79
 []\OT1/cmr/m/n/10 Interesse mostrato esplicitamente dallo studente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-[]\OT1/cmr/m/n/10 Ricerche effettuate dallo studente nell'ultima
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 104--105
-\OT1/cmr/m/n/10 simili (si considerino corso di laurea, ricerche
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []\OT1/cmr/m/n/10 Inserimento titolo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 \OT1/cmr/m/n/10 in lista "Titoli
  []
 
 
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 83--109
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 61--84
 [][] 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []\OT1/cmr/m/n/10 Inserimento
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 []\OT1/cmr/m/n/10 Condizioni del libro seguendo le indicazioni
  []
 
 
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 110--130
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 85--103
 [][] 
  []
 
-[4] [5]
-Underfull \hbox (badness 1406) in paragraph at lines 133--133
+[3] [4]
+Underfull \hbox (badness 1406) in paragraph at lines 106--106
 []\OT1/cmr/m/n/10 Inserimento di un
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 140--140
+Underfull \hbox (badness 1325) in paragraph at lines 113--113
 \OT1/cmr/m/n/10 ISBN sia stato inserito in precedenza e, se cio non
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 140--140
+Underfull \hbox (badness 3375) in paragraph at lines 113--113
 \OT1/cmr/m/n/10 e avvenuto, inserisce il titolo nel database e crea
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 140--140
+Underfull \hbox (badness 1715) in paragraph at lines 113--113
 \OT1/cmr/m/n/10 automaticamente una pagina del titolo contenente le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
 []\OT1/cmr/m/n/10 Accesso pagina
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []\OT1/cmr/m/n/10 Accesso pagina
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []\OT1/cmr/m/n/10 Modifica
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 \OT1/cmr/m/n/10 informazioni
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 160--160
+Underfull \hbox (badness 1097) in paragraph at lines 134--134
 []\OT1/cmr/m/n/10 Modifica da parte di uno studente delle informazioni
  []
 
 
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 131--162
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 104--136
 [][] 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-[]\OT1/cmr/m/n/10 Accesso pagina
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\OT1/cmr/m/n/10 personale
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []\OT1/cmr/m/n/10 Ricerca pagina
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/m/n/10 Modifica pagina
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 179--179
+Underfull \hbox (badness 4366) in paragraph at lines 146--146
 []\OT1/cmr/m/n/10 Comunicazione da parte del venditore dell'avvenuta
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 180--180
+Underfull \hbox (badness 1859) in paragraph at lines 147--147
 []\OT1/cmr/m/n/10 Il sistema invia all'utente citato dal venditore come
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
 \OT1/cmr/m/n/10 acquirente una email per richiedere la conferma
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 180--180
+Underfull \hbox (badness 1242) in paragraph at lines 147--147
 \OT1/cmr/m/n/10 pagina in cui l'acquirente potra confermare o negare
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 181--183
+Underfull \hbox (badness 2600) in paragraph at lines 148--150
 \OT1/cmr/m/n/10 dell'utente che e stato indicato dal venditore quale
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 187--188
+Underfull \hbox (badness 3557) in paragraph at lines 154--155
 []\OT1/cmr/m/n/10 il sistema inviera una email al venditore per
  []
 
 
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 164--191
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 138--158
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
 []\OT1/cmr/m/n/10 Recensione
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 194--194
+Underfull \hbox (badness 4144) in paragraph at lines 161--161
 \OT1/cmr/m/n/10 dovra risultare possibile soltanto dopo la conferma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 Recensione
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 195--195
+Underfull \hbox (badness 1496) in paragraph at lines 162--162
 []\OT1/cmr/m/n/10 Inserimento da parte di un utente venditore di una
  []
 
 
-Underfull \hbox (badness 4144) in paragraph at lines 195--195
+Underfull \hbox (badness 4144) in paragraph at lines 162--162
 \OT1/cmr/m/n/10 dovra risultare possibile soltanto dopo la conferma
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 196--196
+Underfull \hbox (badness 2027) in paragraph at lines 163--163
 []\OT1/cmr/m/n/10 Inserimento da parte di un utente qualsiasi di una
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]\OT1/cmr/m/n/10 Segnalazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\OT1/cmr/m/n/10 Gestione
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 198--198
-\OT1/cmr/m/n/10 autore del contenuto eliminato deve essere notificato
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]\OT1/cmr/m/n/10 Comunicazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 192--201
+Overfull \hbox (36.28072pt too wide) in paragraph at lines 159--165
 [][] 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-[]\OT1/cmr/m/n/10 Richiesta di
- []
+[6]
+<./images/g_uc.jpeg, id=31, 641.5167pt x 686.565pt>
+File: ./images/g_uc.jpeg Graphic file (type jpg)
+<use ./images/g_uc.jpeg>
+Package pdftex.def Info: ./images/g_uc.jpeg  used on input line 171.
+(pdftex.def)             Requested size: 319.02495pt x 341.42738pt.
+<./images/sb_uc.jpeg, id=32, 668.4975pt x 596.2275pt>
+File: ./images/sb_uc.jpeg Graphic file (type jpg)
+<use ./images/sb_uc.jpeg>
+Package pdftex.def Info: ./images/sb_uc.jpeg  used on input line 177.
+(pdftex.def)             Requested size: 483.71494pt x 431.42143pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]\OT1/cmr/m/n/10 Gestione richiesta
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 202--207
-[][] 
- []
-
-<./images/gua_uc.jpeg, id=34, 614.7768pt x 234.8775pt>
-File: ./images/gua_uc.jpeg Graphic file (type jpg)
-<use ./images/gua_uc.jpeg>
-Package pdftex.def Info: ./images/gua_uc.jpeg  used on input line 213.
-(pdftex.def)             Requested size: 483.70776pt x 184.80214pt.
-
-Overfull \hbox (56.91641pt too wide) in paragraph at lines 213--214
+Overfull \hbox (56.92358pt too wide) in paragraph at lines 177--178
  [][] 
  []
 
-[8]
-<./images/st_uc.jpeg, id=38, 794.97pt x 594.0594pt>
-File: ./images/st_uc.jpeg Graphic file (type jpg)
-<use ./images/st_uc.jpeg>
-Package pdftex.def Info: ./images/st_uc.jpeg  used on input line 219.
-(pdftex.def)             Requested size: 483.70584pt x 361.46017pt.
+[7 <./images/g_uc.jpeg>]
+Underfull \hbox (badness 2269) in paragraph at lines 207--208
+[]\OT1/cmr/m/n/10 La mail universitaria inserita deve terminare con il suffisso
 
-Overfull \hbox (56.91449pt too wide) in paragraph at lines 219--220
- [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-[]\OT1/cmr/m/n/10 L'amministratore che effettua la registrazione di un secondo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-[]\OT1/cmr/m/n/10 L'indirizzo email deve essere formattato correttamente
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 224--260
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 182--219
 [] 
  []
 
-[9 <./images/gua_uc.jpeg> <./images/st_uc.jpeg>] [10]
-Underfull \hbox (badness 4686) in paragraph at lines 287--288
-[]\OT1/cmr/m/n/10 L'amministratore accede alla pagina per il login dedicata agl
-i
+[8 <./images/sb_uc.jpeg>]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 221--245
+[] 
  []
 
-
-Underfull \hbox (badness 1264) in paragraph at lines 294--295
-[]\OT1/cmr/m/n/10 Se i dati inseriti sono corretti, il sistema permette l'acces
-so
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 274--298
+[9]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 247--264
 [] 
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 300--324
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 266--283
+[] 
+ []
+
+[10]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 285--302
+[] 
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 304--338
 [] 
  []
 
 [11]
-Underfull \hbox (badness 2591) in paragraph at lines 342--343
-[]\OT1/cmr/m/n/10 Il sistema mostra username dello studente che ha effettuato l
-a
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 326--350
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 340--362
 [] 
  []
 
 [12]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 352--379
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 364--387
+[] 
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 389--414
 [] 
  []
 
 [13]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 381--406
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 416--451
 [] 
  []
 
 [14]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 408--447
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 453--482
 [] 
  []
 
 [15]
-Underfull \hbox (badness 1371) in paragraph at lines 460--461
-[]\OT1/cmr/m/n/10 Generazione automatica di una password da 10 caratteri
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 484--521
+[] 
  []
 
 [16]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 474--506
-[] 
- []
-
-[17]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 508--525
-[] 
- []
-
-[18]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 527--544
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 546--563
-[] 
- []
-
-[19]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 565--601
-[] 
- []
-
-[20]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 603--625
-[] 
- []
-
-[21]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 627--650
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 652--680
-[] 
- []
-
-[22]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 682--710
-[] 
- []
-
-[23]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 712--746
-[] 
- []
-
-[24]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 748--789
-[] 
- []
-
-[25]
-Overfull \vbox (6.12799pt too high) has occurred while \output is active []
-
-
-[26]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 791--820
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 822--859
-[] 
- []
-
-[27]
-Underfull \hbox (badness 1014) in paragraph at lines 891--892
+Underfull \hbox (badness 1014) in paragraph at lines 553--554
 \OT1/cmr/m/n/10 "Titolo inserito correttamente, procedere con la pubblicazione
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 861--896
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 523--558
 [] 
  []
 
-[28]
-Underfull \hbox (badness 2237) in paragraph at lines 911--912
+[17]
+Underfull \hbox (badness 2237) in paragraph at lines 573--574
 []\OT1/cmr/m/n/10 Lo studente accede alla pagina relativa all'annuncio che inte
 nde
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 898--934
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 560--596
 [] 
  []
 
-[29] [30]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 948--986
+[18] [19]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 610--648
 [] 
  []
 
-[31]
-Underfull \hbox (badness 4132) in paragraph at lines 1013--1014
+[20]
+Underfull \hbox (badness 4132) in paragraph at lines 675--676
 []\OT1/cmr/m/n/10 Comando per la scrittura di una recensione nei confronti
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 989--1030
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 651--692
 [] 
  []
 
-[32]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1032--1073
+[21]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 694--735
 [] 
  []
 
-[33]
-Underfull \hbox (badness 1242) in paragraph at lines 1106--1107
+[22]
+Underfull \hbox (badness 1242) in paragraph at lines 768--769
 []\OT1/cmr/m/n/10 Invia una email al venditore per notificarlo dell'avvenuta
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1075--1114
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 737--776
 [] 
  []
 
-[34]
-<./images/class_diagram.jpeg, id=121, 735.7086pt x 731.3724pt>
+[23]
+<./images/class_diagram.jpeg, id=86, 735.7086pt x 731.3724pt>
 File: ./images/class_diagram.jpeg Graphic file (type jpg)
 <use ./images/class_diagram.jpeg>
-Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 1118.
+Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 780.
 (pdftex.def)             Requested size: 483.70566pt x 480.85475pt.
 
-Overfull \hbox (56.9143pt too wide) in paragraph at lines 1118--1119
+Overfull \hbox (56.9143pt too wide) in paragraph at lines 780--781
  [][] 
  []
 
-[35] [36 <./images/class_diagram.jpeg>]
-Overfull \hbox (29.01396pt too wide) in paragraph at lines 1129--1130
+[24] [25 <./images/class_diagram.jpeg>]
+Overfull \hbox (29.01396pt too wide) in paragraph at lines 791--792
 []\OT1/cmr/m/n/10 L'applicazione lavorera in uno spazio messo a disposizione g
 ratuitamente dal PaaS PythonAnywhere,
  []
 
 
-Overfull \hbox (12.09825pt too wide) in paragraph at lines 1157--1158
+Overfull \hbox (12.09825pt too wide) in paragraph at lines 819--820
 []\OT1/cmr/m/n/10 Ripetere dal punto 3, finche nessuna osservazione cambiera 
 piu il proprio cluster di appartenenza. 
  []
 
-<./images/elbow_method.png, id=129, 824.07875pt x 524.96124pt>
+<./images/elbow_method.png, id=94, 824.07875pt x 524.96124pt>
 File: ./images/elbow_method.png Graphic file (type png)
 <use ./images/elbow_method.png>
-Package pdftex.def Info: ./images/elbow_method.png  used on input line 1175.
+Package pdftex.def Info: ./images/elbow_method.png  used on input line 837.
 (pdftex.def)             Requested size: 412.03836pt x 262.47998pt.
-[37] [38 <./images/elbow_method.png>] (Requisiti.aux) ) 
+[26] [27 <./images/elbow_method.png>] (Requisiti.aux) ) 
 Here is how much of TeX's memory you used:
- 3531 strings out of 494864
- 50790 string characters out of 3178303
+ 3529 strings out of 494864
+ 50738 string characters out of 3178303
  128809 words of memory out of 3000000
- 7111 multiletter control sequences out of 15000+200000
+ 7109 multiletter control sequences out of 15000+200000
  12455 words of font info for 48 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,9n,25p,586b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,25p,435b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/marco/.miktex/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/marco/.miktex/texm
 fs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/marco/.miktex/texmf
@@ -859,9 +713,9 @@ l/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/marco/.miktex/texmfs/install/
 fonts/type1/public/amsfonts/cm/cmr7.pfb></home/marco/.miktex/texmfs/install/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb></home/marco/.miktex/texmfs/install/font
 s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Requisiti.pdf (39 pages, 1163695 bytes).
+Output written on Requisiti.pdf (28 pages, 1114047 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

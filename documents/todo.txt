@@ -1,0 +1,6 @@
+1. Pseudocodice algoritmo
+2. Requisiti in iterazione 1
+3. Casi d'uso coperti
+4. Iteration 0: caso d'uso logout
+5. Sfoltire iterazione 0
+6. Progettazione URL

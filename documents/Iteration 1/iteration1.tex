@@ -17,14 +17,14 @@
 	\maketitle
 	\tableofcontents
 	
-	\section{Obiettivi dell'iterazione}
-	Di seguito vengono riportate le funzionalità implementate durante l'iterazione 1:
+	\section{Casi d'uso coperti}
+	Di seguito vengono riportati i casi d'uso coperti dal software realizzato nell'iterazione 1:
 	\begin{enumerate}
-		\item Registrazione nuovo utente
-		\item Login
+		\item UCS1: Registrazione studente
+		\item UCS2: Login studente
 		\item Logout
-		\item Ricerca utenti
-		\item Ricerca annunci
+		\item UCS12: Ricerca studente
+		\item UCS11: Ricerca annuncio
 	\end{enumerate}
 	Per l'implementazione di queste funzionalità si sono resi necessari due ulteriori passi:
 	\begin{enumerate}
@@ -32,7 +32,7 @@
 		\item \textit{Realizzazione di uno script Python per il riempimento del database}: questo passo si è reso necessario per poter avere un numero consistente di dati su cui testare le diverse funzionalità dell'applicazione.
 	\end{enumerate}
 
-	\subsection{Note sul processo di implementazione}
+	\section{Note sul processo di implementazione}
 	L'obiettivo iniziale era quello di realizzare questo progetto tramite un processo di Test Driven Development puro, tuttavia è stato necessario modificare questo processo permettendoci di testare alcune componenti del software solo dopo la loro implementazione. \\
 	Questo va contro i principi del TDD, per cui bisognerebbe prima ideare una serie di test e solo dopo realizzare un codice sufficiente per passarli, ma si è reso necessario per due motivi:
 	\begin{enumerate}
@@ -72,8 +72,16 @@
 		\item Alcune funzioni utilizzano la libreria "random", la quale rende il comportamento di alcune porzioni di codice imprevedibile; non è quindi possibile avere una copertura del 100\% in certe funzioni.
 	\end{itemize}
 
+	\section{L'architettura software}
+	Trattandosi di una applicazione web realizzata con Django, l'architettura software è imposta dal framework utilizzato, pertanto sia in questa iterazione che nella successiva l'architettura non è cambiata. Il pattern utilizzato è il MVT già mostrato nell'iterazione 0. \\
+	In questa iterazione sono stati sviluppati i 3 componenti di tale pattern.
 	\section{Realizzazione dei modelli dei dati}
-	Non tutte le tabelle progettate nella iterazione 0 sono state tradotte in modelli, in quanto solo una parte delle funzionalità del progetto sono state e saranno implementate, rendendo alcune tabelle superflue. \\
+	Non tutte le tabelle progettate nella iterazione 0 sono state tradotte in modelli, in quanto solo una parte delle funzionalità del progetto sono state e saranno implementate, rendendo alcune tabelle superflue. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm, width=17cm, keepaspectratio]{images/models.png}
+		\caption{Diagramma dei modelli implementati}
+	\end{figure}
 	I modelli creati sono i seguenti:
 	\begin{itemize}
 		\item User: modello base fornito di default da Django. 
@@ -141,6 +149,25 @@
 	\end{itemize}
 
 	\section{Implementazione delle altre funzionalità}
+	
+	\subsection{Template}
+	Django mette a disposizione un vero e proprio linguaggio di programmazione utilizzabile all'interno dei template HTML e noi ne abbiamo fatto largo uso. \\
+	E' inoltre possibile evitare di ripetere per ogni pagina web porzioni di codice HTML comune, estendendo un template comune contenente proprio quel codice da riutilizzare. \\
+	
+	Tutti i nostri template estendono il template "base.html", il quale descrive la barra di navigazione presente in tutto il sito web e la divisione tra titolo e corpo delle singole pagine web.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm, width=17cm, keepaspectratio]{images/templates.png}
+		\caption{Diagramma dei modelli implementati}
+	\end{figure}
+	
+	\subsection{Login e logout}
+	Il login e il logout sono stati implementati facilmente, in quanto è stato sufficiente utilizzare quelli già forniti da Django.
+	
+	\subsection{Registrazione di un nuovo utente}
+	La registrazione di un nuovo utente implica implicitamente la creazione di un nuovo oggetto User e di un nuovo oggetto StudentProfile. Per questo motivo la pagina per la registrazione presenta due form, uno per la creazione dell'utente e uno per la creazione del profilo studente. \\
+	I form sono stati realizzati da noi, così come il controllo sull'indirizzo email inserito (il quale deve appartenere al dominio unibg.it, coerentemente con le specifiche)
 	
 	
 \end{document}
