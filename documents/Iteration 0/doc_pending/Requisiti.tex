@@ -479,8 +479,32 @@
 			\item Lo studente può accedere alla pagina relativa ad un qualsiasi titolo mostrato per visionare eventuali informazioni aggiuntive, quali una descrizione (facoltativa) realizzata da altri studenti, le recensioni del titolo effettuate da altri studenti e l'elenco dei corsi per i quali il titolo è consigliato.
 		\end{enumerate}
 	\end{tabular}
-
-	\subsection{UCS14: Inserimento annuncio libro in vendita}
+	
+	\subsection{UC12: Visualizzazione annunci consigliati}
+	\begin{tabular}{lp{0.8\textwidth}}
+		\textbf{Descrizione}&Uno studente visualizza un elenco di annunci consigliati per lui.\\
+		\\
+		\textbf{Requisiti coperti}&RI2\\
+		\\
+		\textbf{Attori coinvolti}&Studente\\
+		\\
+		\textbf{Precondizioni}&Lo studente ha effettuato il login.\\
+		\\
+		\textbf{Postcondizioni}&Vengono mostrati una serie di annunci consigliati per l'utente.\\
+		\\
+		\textbf{Processo}&Di seguito è descritto il processo:
+		\begin{enumerate}
+			\item Lo studente accede alla pagina "Suggested ads".
+			\item Il sistema mostra una serie di annunci considerati compatibili con l'utente poiché in possesso delle seguenti caratteristiche:
+			\begin{itemize}
+				\item Fanno parte della Wishlist di utenti simili all'utente corrente.
+				\item Fanno parte della Lista degli Interessi di utenti simili all'utente attuale.		
+			\end{itemize}
+		\end{enumerate}
+	\end{tabular}
+	
+	
+	\subsection{UC13: Inserimento annuncio libro in vendita}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole pubblicare un annuncio per la vendita di un libro.\\
 		\\
@@ -519,7 +543,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UCS15: Inserimento nuovo titolo}
+	\subsection{UC14: Inserimento nuovo titolo}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole inserire un nuovo titolo nel database del sistema.\\
 		\\
@@ -551,12 +575,12 @@
 			\item Sulla base del risultato della verifica descritta al passo precedente, il sistema si comporta in modi diversi:
 			\begin{itemize}
 				\item Se tutti i campi sono stati compilati correttamente, il sistema salva il titolo nel database, mostra un riquadro verde con la scritta "Titolo inserito correttamente, procedere con la pubblicazione dell'annuncio" e dopo 3 secondi rimanda lo studente alla pagina relativa alla pubblicazione di un annuncio.
-				\item Se almeno uno dei campi non è stato compilato correttamente, il sistema non salva il titolo e mostra un riquadro rosso con la scritta "Campi compilati in modo errato".
+				\item Se almeno uno dei campi non è stato compilato correttamente, il sistema non salva il titolo ed invita l'utente ad inserire dati corretti.
 			\end{itemize}
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UCS16: Modifica annuncio libro in vendita}
+	\subsection{UC15: Modifica annuncio libro in vendita}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole modificare un annuncio da lui stesso pubblicato in passato.\\
 		\\
@@ -573,8 +597,6 @@
 			\item Lo studente accede alla pagina relativa all'annuncio che intende modificare.
 			\item Il sistema verifica che lo studente sia il proprietario dell'annuncio e, in caso affermativo, oltre alle informazioni normalmente riportate mette a disposizione anche un comando "Modifica annuncio".
 			\item Lo studente esegue il comando "Modifica annuncio".
-			
-			
 			\item Il sistema mostra una pagina contenente un elenco di campi precompilati con le informazioni attuali dell'annuncio e che possono essere modificate:
 			\begin{itemize}
 				\item Titolo: selezionabile da una lista dei titoli già presenti nel sistema. Se il titolo risulta assente da tale lista, la sua aggiunta è a carico del venditore (caso d'uso \textit{UCS12}).
@@ -599,14 +621,14 @@
 			\setcounter{enumi}{6}
 			\item Sulla base del risultato della verifica descritta al passo precedente, il sistema si comporta in modi diversi:
 			\begin{itemize}
-				\item Se tutti i campi sono stati compilati correttamente, il sistema salva le modifiche apportate all'annuncio nel database e mostra un riquadro verde con la scritta "Annuncio modificato con successo".
-				\item Se almeno uno dei campi non è stato compilato correttamente, il sistema non salva l'annuncio e mostra un riquadro rosso con la scritta "Campi compilati in modo errato".
+				\item Se tutti i campi sono stati compilati correttamente, il sistema salva le modifiche apportate all'annuncio nel database e notifica l'utente dell'avvenuta modifica.
+				\item Se almeno uno dei campi non è stato compilato correttamente, il sistema non salva l'annuncio ed invita l'utente a compilare i campi in modo corretto.
 			\end{itemize}
 		\end{enumerate}
 	\end{tabular}
 	
 
-	\subsection{UCS17: Notifica avvenuta vendita libro}
+	\subsection{UC16: Notifica avvenuta vendita libro}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole notificare al sistema l'avvenuta vendita di un libro.\\
 		\\
@@ -623,8 +645,6 @@
 			\item Lo studente accede alla pagina relativa all'annuncio di cui intende notificare l'avvenuta vendita.
 			\item Il sistema verifica che lo studente sia il proprietario dell'annuncio e, in caso affermativo, oltre alle informazioni normalmente riportate mette a disposizione anche un comando "Notifica vendita".
 			\item Lo studente esegue il comando "Notifica vendita".
-			
-			
 			\item Il sistema mostra una pagina contenente un elenco di campi da compilare:
 			\begin{itemize}
 				\item Username dell'acquirente: selezionabile da un elenco di studenti iscritti al servizio.
@@ -641,13 +661,13 @@
 					\item Prezzo d'acquisto
 					\item Data dell'ipotetica cessione
 				\end{itemize}
-				\item Se almeno uno dei campi non è stato compilato correttamente, il sistema non invia alcuna email e mostra un riquadro rosso con la scritta "Campi compilati in modo errato".
+				\item Se almeno uno dei campi non è stato compilato correttamente, il sistema non invia alcuna email ed invita l'utente a compilare i campi correttamente.
 			\end{itemize}
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UCS18: Recensione studente}
-	\subsubsection{UCS18.1: Recensione acquirente}
+	\subsection{UC17: Recensione studente}
+	\subsubsection{UC17.1: Recensione acquirente}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole recensire l'acquirente di un proprio libro precedentemente in vendita.\\
 		\\
@@ -685,12 +705,12 @@
 			\item Sulla base del risultato della verifica effettuata al passo precedente, il sistema si comporta in modo differente:
 			\begin{itemize}
 				\item Se i campi sono stati compilati correttamente, il sistema salva la recensione nel database e la pubblica sulla pagina personale dello studente recensito, il quale viene anche notificato tramite email della recensione ricevuta.
-				\item Se i campi non sono stati compilati correttamente, il sistema non salva e non pubblica la recensione e mostra un riquadro rosso contenente la scritta "Campi compilati in modo errato".
+				\item Se i campi non sono stati compilati correttamente, il sistema non salva e non pubblica la recensione ed invita l'utente a compilare i campi in modo corretto.
 			\end{itemize}
 		\end{enumerate}
 	\end{tabular}
 
-	\subsubsection{UCS18.2: Recensione venditore}
+	\subsubsection{UC17.2: Recensione venditore}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di acquirente vuole recensire il venditore di un libro precedentemente acquistato.\\
 		\\
@@ -728,12 +748,12 @@
 			\item Sulla base del risultato della verifica effettuata al passo precedente, il sistema si comporta in modo differente:
 			\begin{itemize}
 				\item Se i campi sono stati compilati correttamente, il sistema salva la recensione nel database e la pubblica sulla pagina personale dello studente recensito, il quale viene anche notificato tramite email della recensione ricevuta.
-				\item Se i campi non sono stati compilati correttamente, il sistema non salva e non pubblica la recensione e mostra un riquadro rosso contenente la scritta "Campi compilati in modo errato".
+				\item Se i campi non sono stati compilati correttamente, il sistema non salva e non pubblica la recensione ed invita l'utente a compilare i campi in modo corretto.
 			\end{itemize}
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UCS19: Conferma acquisto libro}
+	\subsection{UC18: Conferma acquisto libro}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di acquirente vuole recensire il venditore di un libro precedentemente acquistato.\\
 		\\
@@ -787,7 +807,7 @@
 		\item Tipologia di applicazione: applicazione web, in modo da garantire un accesso semplice da qualsiasi tipo di dispositivo.
 		\item Linguaggio di programmazione per l'applicazione back-end: Python 3 - framework Django 2.1, framework moderno che offre numerosi servizi di default, linguaggio ordinato e di facile lettura.
 		\item Front-end: framework Bootstrap 4, per garantire una visualizzazione ottimale su dispositivi di dimensioni diverse.
-		\item DBMS: PostgreSQL, indicato come particolarmente adatto per applicazioni che richiedono l'utilizzo di algoritmi di ricerca fuzzy. N.B. L'implementazione reale del progetto utilizzerà SQLite, in quanto le funzionalità che verranno realmente implementate non richiedono DBMS particolari.
+		\item DBMS: Amazon RDS, DBaaS che permette di limitare responsabilità e costi legati ad una istanza reale di un DBMS. \textbf{N.B.}: la nostra implementazione utilizzerà SQLite, in quanto una simulazione del sistema progettato necessita di pochi dati e pertanto anche di un piccolo database.
 		\item L'applicazione lavorerà in uno spazio messo a disposizione gratuitamente dal PaaS PythonAnywhere, specializzato nell'esecuzione di applicazioni Python.
 	\end{itemize}
 
@@ -798,6 +818,7 @@
 		\item LucidChart: realizzazione di schemi in linguaggio UML.
 		\item PyCharm: IDE specifico per la programmazione in Python.
 		\item Github: versioning dell'applicazione.
+		\item PythonAnywhere: deployment dell'applicazione.
 	\end{itemize}
 	
 	\section{Algoritmo: il clustering}
