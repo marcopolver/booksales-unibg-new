@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 \usepackage{mathtools}
+\usepackage[]{algorithm2e}
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \usepackage[left=3.00cm, right=3.00cm, top=3.00cm, bottom=3.00cm]{geometry}
 \author{Del Prete Giovanni, Ghilardi Nicola, Polver Marco}
@@ -20,11 +21,11 @@
 	\section{Casi d'uso coperti}
 	Di seguito vengono riportati i casi d'uso coperti dal software realizzato nell'iterazione 1:
 	\begin{enumerate}
-		\item UCS1: Registrazione studente
-		\item UCS2: Login studente
-		\item Logout
-		\item UCS12: Ricerca studente
-		\item UCS11: Ricerca annuncio
+		\item UC1: Registrazione studente
+		\item UC2: Login studente
+		\item UC3: Logout
+		\item UC10: Ricerca annuncio
+		\item UC11: Ricerca studente
 	\end{enumerate}
 	Per l'implementazione di queste funzionalità si sono resi necessari due ulteriori passi:
 	\begin{enumerate}
@@ -47,7 +48,7 @@
 		\item \textit{Selenium WebDriver}, una famosa API che permette di automatizzare l'utilizzo di un qualsiasi browser, molto utile per l'esecuzione di test funzionali.
 	\end{itemize}
 	\subsubsection{Test strutturali}
-	Come già è stato detto in precedenza, i test strutturali sono stati effettuati utilizzando la classe TestCse che viene fornita da Django. \\
+	Come già è stato detto in precedenza, i test strutturali sono stati effettuati utilizzando la classe TestCase che viene fornita da Django. \\
 	L'esecuzione di test all'interno del framework Django risulta particolarmente comoda in quanto permette di utilizzare un vero e proprio "database di test", evitando quindi di sporcare il database normalmnte utilizzato dall'applicazione con dati utili solo in fase di test. \\
 	I test strutturali effettuati per le varie funzionalità dell'applicazione verificano in genere i seguenti punti:
 	\begin{itemize}
@@ -167,7 +168,128 @@
 	
 	\subsection{Registrazione di un nuovo utente}
 	La registrazione di un nuovo utente implica implicitamente la creazione di un nuovo oggetto User e di un nuovo oggetto StudentProfile. Per questo motivo la pagina per la registrazione presenta due form, uno per la creazione dell'utente e uno per la creazione del profilo studente. \\
-	I form sono stati realizzati da noi, così come il controllo sull'indirizzo email inserito (il quale deve appartenere al dominio unibg.it, coerentemente con le specifiche)
+	I form sono stati realizzati da noi, così come il controllo sull'indirizzo email inserito (il quale deve appartenere al dominio studenti.unibg.it, coerentemente con le specifiche). \\
+	La funzione di registrazione funziona come segue: \\
 	
+	\begin{algorithm}[H]
+		\KwData{request}
+		\KwResult{nuovo User e nuovo StudentProfile salvati nel database }
+		initialization\;
+		\eIf{request.type = 'POST'}{
+			creazione user\_form\;
+			creazione student\_form\;
+			ricezione dati utente\;
+			
+			\If{user\_form valido \textbf{and} student\_form valido}{
+				
+				user $\gets$ user\_form.data\;
+				student $\gets$ student\_form.data\;
+				student.user $\gets$ user\;
+				\textbf{return} login page \;
+			}
+		}{
+			user $\gets$ user\_form.data\;
+			student $\gets$ student\_form.data\;
+		}
+		\textbf{return} signup page
+	\end{algorithm}
+
+	\subsection{Ricerca studente}
+	Questo caso d'uso richiede l'implementazione di due "view" all'interno della webapp:
+	\begin{itemize}
+		\item funzione search\_users
+		\item classe SearchUsersResults
+	\end{itemize}
+
+	\subsubsection{search\_users}
+	Questa funzione lavora nel seguente modo:\\
 	
+	\begin{algorithm}[H]
+		\KwData{request}
+		\KwResult{search\_student page}
+		initialization\;
+		
+		create student\_search form\;
+		\textbf{return} search\_student page with student\_search form\; 
+	\end{algorithm}
+
+	\subsubsection{SearchUsersResults}
+	
+	Questa classe contiene un metodo \textit{get\_queryset} che ha l'obiettivo di filtrare gli utenti del servizio sulla base dei campi compilati. \\
+	
+	\begin{algorithm}[H]
+		\KwData{username, major, year of study, User objects, StudentProfile objects}
+		\KwResult{list of compatible students}
+		initialization\;
+		
+		users $\gets$ \{u $\in$ User.objects \textbf{if} u.username contains username\}\;
+		profiles $\gets$ \{p $\in$ StudentProfile.objects \textbf{if} p.user $\in$ users\}\;
+		object\_list $\gets$ \{o $\in$ profiles \textbf{if} o.major = major \textbf{and} o.year\_of\_study = year of study\}\;
+		
+		\textbf{return} object\_list\;
+		
+	\end{algorithm}
+
+	\subsection{Ricerca annuncio}
+	Questo caso d'uso richiede l'implementazione di due "view" all'interno della webapp:
+	\begin{itemize}
+		\item funzione search\_ads
+		\item classe SearchAdsResults
+	\end{itemize}
+
+	\subsubsection{search\_ads}
+	Questa funzione lavora nel seguente modo:\\
+	
+	\begin{algorithm}[H]
+		\KwData{request}
+		\KwResult{search\_ads page}
+		initialization\;
+		
+		create ads\_search form\;
+		\textbf{return} search\_ads page with ads\_search form\; 
+	\end{algorithm}
+	
+	\subsubsection{SearchAdsResults}
+	
+	Questa classe contiene un metodo \textit{get\_queryset} che ha l'obiettivo di filtrare gli annunci pubblicati sul sito web sulla base dei campi compilati. \\
+	
+	\begin{algorithm}[H]
+		\KwData{title name, quality class, starting price, ending price, Title objects, BookAd objects}
+		\KwResult{list of compatible ads}
+		initialization\;
+		
+		chosen\_title $\gets$ \{t $\in$ Title.objects \textbf{if} t.name = title name\}\;
+		ads $\gets$ \{a $\in$ BookAd.objects \textbf{if} a.title = chosen\_title \textbf{and} a.quality\_class = quality class\}\;
+		object\_list $\gets$ \{o $\in$ ads \textbf{if} starting price $\leq$ a.price $\leq$ ending price\}\;
+		
+		\textbf{return} object\_list\;
+		
+	\end{algorithm}
+
+	\section{Resoconto test (copertura C0)}
+	I test sono stati effettuati sull'intera applicazione, pertanto anche sulle porzioni di codice fornite di default dal framework Django. Queste porzioni di codice non risultano tuttavia interessanti nella valutazione della copertura dei test, quindi valutiamo solo la copertura dei componenti da noi creati.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm, width=15cm, keepaspectratio]{images/sales_views_test.png}
+		\caption{Copertura C0 delle "view" della webapp, ovvero dei metodi che elaborano i dati}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm, width=15cm, keepaspectratio]{images/sales_models_test.png}
+		\caption{Copertura C0 dei modelli dei dati}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm, width=15cm, keepaspectratio]{images/kmeans_test.png}
+		\caption{Copertura C0 dell'algoritmo di clustering k-means}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=10cm, width=15cm, keepaspectratio]{images/sales_urls_test.png}
+		\caption{Copertura C0 degli URL della webapp}
+	\end{figure}
 \end{document}

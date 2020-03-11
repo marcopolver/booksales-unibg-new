@@ -11,3 +11,10 @@
 \contentsline {subsection}{\numberline {0.6.1}Template}{5}% 
 \contentsline {subsection}{\numberline {0.6.2}Login e logout}{5}% 
 \contentsline {subsection}{\numberline {0.6.3}Registrazione di un nuovo utente}{6}% 
+\contentsline {subsection}{\numberline {0.6.4}Ricerca studente}{6}% 
+\contentsline {subsubsection}{search\_users}{6}% 
+\contentsline {subsubsection}{SearchUsersResults}{6}% 
+\contentsline {subsection}{\numberline {0.6.5}Ricerca annuncio}{7}% 
+\contentsline {subsubsection}{search\_ads}{7}% 
+\contentsline {subsubsection}{SearchAdsResults}{7}% 
+\contentsline {section}{\numberline {0.7}Resoconto test (copertura C0)}{7}% 

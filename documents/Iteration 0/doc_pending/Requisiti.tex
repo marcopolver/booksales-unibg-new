@@ -56,6 +56,7 @@
 			\item Non sia una password banale (es. 00000000)
 		\end{itemize}\\ \hline
 		AC2&Accesso studente&Accesso al servizio da parte di uno studente precedentemente registrato tramite inserimento di username e password.\\ \hline
+		AC3&Logout studente&Logout da parte di uno studente che ha precedentemente effettuato l'accesso al servizio.\\ \hline
 	\end{tabular}
 
 	\begin{tabular}{cp{3cm}p{9cm}p{1cm}}
@@ -243,7 +244,26 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC3: Inserimento libro in lista "Wishlist"}
+	\subsection{UC3: Logout studente}
+	\begin{tabular}{lp{0.8\textwidth}}
+		\textbf{Descrizione}&Uno studente effettua il logout.\\
+		\\
+		\textbf{Requisiti coperti}&AC3\\
+		\\
+		\textbf{Attori coinvolti}&Studente\\
+		\\
+		\textbf{Precondizioni}&Lo studente ha effettuato il login.\\
+		\\
+		\textbf{Postcondizioni}&La sessione dello studente corrente viene terminata.\\
+		\\
+		\textbf{Processo}&Di seguito è descritto il processo:
+		\begin{enumerate}
+			\item Lo studente clicca il link "Logout" sempre accessibile dalla barra di navigazione.
+			\item Il sistema termina la sessione dello studente e reindirizza quest'ultimo alla pagina di login.
+		\end{enumerate}
+	\end{tabular}
+
+	\subsection{UC4: Inserimento libro in lista "Wishlist"}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente inserisce un libro in vendita nella propria lista "Wishlist".\\
 		\\
@@ -262,7 +282,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC4: Inserimento titolo in lista "Titoli d'interesse"}
+	\subsection{UC5: Inserimento titolo in lista "Titoli d'interesse"}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente inserisce un titolo nella propria lista "Titoli d'interesse".\\
 		\\
@@ -281,7 +301,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC5: Accesso pagina persinale studente}
+	\subsection{UC6: Accesso pagina persinale studente}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente vuole accedere alla propria pagina personale.\\
 		\\
@@ -300,7 +320,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC6: Modifica impostazioni personali}
+	\subsection{UC7: Modifica impostazioni personali}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente vuole modificare le proprie informazioni personali.\\
 		\\
@@ -336,7 +356,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC7: Modifica pagina titolo}
+	\subsection{UC8: Modifica pagina titolo}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente vuole modificare le proprie informazioni personali.\\
 		\\
@@ -360,7 +380,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC8: Recensione titolo}
+	\subsection{UC9: Recensione titolo}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente vuole recensire un titolo.\\
 		\\
@@ -385,7 +405,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC9: Ricerca annuncio}
+	\subsection{UC10: Ricerca annuncio}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente effettua la ricerca di un libro tra gli annunci pubblicati.\\
 		\\
@@ -412,7 +432,7 @@
 		\end{enumerate}
 	\end{tabular}
 	
-	\subsection{UC10: Ricerca studente}
+	\subsection{UC11: Ricerca studente}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Un utente effettua la ricerca di uno studente che usufruisce del servizio.\\
 		\\
@@ -449,7 +469,7 @@
 		\end{enumerate}
 	\end{tabular}
 	
-	\subsection{UC11: Ricerca pagina titolo}
+	\subsection{UC12: Ricerca pagina titolo}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente effettua la ricerca della pagina relativa ad uno specifico titolo.\\
 		\\
@@ -480,7 +500,7 @@
 		\end{enumerate}
 	\end{tabular}
 	
-	\subsection{UC12: Visualizzazione annunci consigliati}
+	\subsection{UC13: Visualizzazione annunci consigliati}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente visualizza un elenco di annunci consigliati per lui.\\
 		\\
@@ -504,7 +524,7 @@
 	\end{tabular}
 	
 	
-	\subsection{UC13: Inserimento annuncio libro in vendita}
+	\subsection{UC14: Inserimento annuncio libro in vendita}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole pubblicare un annuncio per la vendita di un libro.\\
 		\\
@@ -543,7 +563,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC14: Inserimento nuovo titolo}
+	\subsection{UC15: Inserimento nuovo titolo}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole inserire un nuovo titolo nel database del sistema.\\
 		\\
@@ -580,7 +600,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC15: Modifica annuncio libro in vendita}
+	\subsection{UC16: Modifica annuncio libro in vendita}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole modificare un annuncio da lui stesso pubblicato in passato.\\
 		\\
@@ -628,7 +648,7 @@
 	\end{tabular}
 	
 
-	\subsection{UC16: Notifica avvenuta vendita libro}
+	\subsection{UC17: Notifica avvenuta vendita libro}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole notificare al sistema l'avvenuta vendita di un libro.\\
 		\\
@@ -666,8 +686,8 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC17: Recensione studente}
-	\subsubsection{UC17.1: Recensione acquirente}
+	\subsection{UC18: Recensione studente}
+	\subsubsection{UC18.1: Recensione acquirente}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di venditore vuole recensire l'acquirente di un proprio libro precedentemente in vendita.\\
 		\\
@@ -710,7 +730,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsubsection{UC17.2: Recensione venditore}
+	\subsubsection{UC18.2: Recensione venditore}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di acquirente vuole recensire il venditore di un libro precedentemente acquistato.\\
 		\\
@@ -753,7 +773,7 @@
 		\end{enumerate}
 	\end{tabular}
 
-	\subsection{UC18: Conferma acquisto libro}
+	\subsection{UC19: Conferma acquisto libro}
 	\begin{tabular}{lp{0.8\textwidth}}
 		\textbf{Descrizione}&Uno studente nel ruolo di acquirente vuole recensire il venditore di un libro precedentemente acquistato.\\
 		\\

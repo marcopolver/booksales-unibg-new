@@ -4,26 +4,27 @@
 \contentsline {section}{\numberline {0.2}Casi d'uso}{7}% 
 \contentsline {subsection}{\numberline {0.2.1}UC1: Registrazione studente}{9}% 
 \contentsline {subsection}{\numberline {0.2.2}UC2: Login studente}{10}% 
-\contentsline {subsection}{\numberline {0.2.3}UC3: Inserimento libro in lista "Wishlist"}{10}% 
-\contentsline {subsection}{\numberline {0.2.4}UC4: Inserimento titolo in lista "Titoli d'interesse"}{11}% 
-\contentsline {subsection}{\numberline {0.2.5}UC5: Accesso pagina persinale studente}{11}% 
-\contentsline {subsection}{\numberline {0.2.6}UC6: Modifica impostazioni personali}{12}% 
-\contentsline {subsection}{\numberline {0.2.7}UC7: Modifica pagina titolo}{13}% 
-\contentsline {subsection}{\numberline {0.2.8}UC8: Recensione titolo}{13}% 
-\contentsline {subsection}{\numberline {0.2.9}UC9: Ricerca annuncio}{14}% 
-\contentsline {subsection}{\numberline {0.2.10}UC10: Ricerca studente}{15}% 
-\contentsline {subsection}{\numberline {0.2.11}UC11: Ricerca pagina titolo}{16}% 
-\contentsline {subsection}{\numberline {0.2.12}UC12: Visualizzazione annunci consigliati}{17}% 
-\contentsline {subsection}{\numberline {0.2.13}UC13: Inserimento annuncio libro in vendita}{18}% 
-\contentsline {subsection}{\numberline {0.2.14}UC14: Inserimento nuovo titolo}{19}% 
-\contentsline {subsection}{\numberline {0.2.15}UC15: Modifica annuncio libro in vendita}{20}% 
-\contentsline {subsection}{\numberline {0.2.16}UC16: Notifica avvenuta vendita libro}{22}% 
-\contentsline {subsection}{\numberline {0.2.17}UC17: Recensione studente}{23}% 
-\contentsline {subsubsection}{UC17.1: Recensione acquirente}{23}% 
-\contentsline {subsubsection}{UC17.2: Recensione venditore}{24}% 
-\contentsline {subsection}{\numberline {0.2.18}UC18: Conferma acquisto libro}{25}% 
-\contentsline {section}{\numberline {0.3}Class diagram}{26}% 
-\contentsline {section}{\numberline {0.4}Scelte progettuali}{26}% 
-\contentsline {section}{\numberline {0.5}Toolchain}{27}% 
-\contentsline {section}{\numberline {0.6}Algoritmo: il clustering}{27}% 
-\contentsline {subsection}{\numberline {0.6.1}K-means clustering}{27}% 
+\contentsline {subsection}{\numberline {0.2.3}UC3: Logout studente}{10}% 
+\contentsline {subsection}{\numberline {0.2.4}UC4: Inserimento libro in lista "Wishlist"}{11}% 
+\contentsline {subsection}{\numberline {0.2.5}UC5: Inserimento titolo in lista "Titoli d'interesse"}{11}% 
+\contentsline {subsection}{\numberline {0.2.6}UC6: Accesso pagina persinale studente}{12}% 
+\contentsline {subsection}{\numberline {0.2.7}UC7: Modifica impostazioni personali}{13}% 
+\contentsline {subsection}{\numberline {0.2.8}UC8: Modifica pagina titolo}{14}% 
+\contentsline {subsection}{\numberline {0.2.9}UC9: Recensione titolo}{14}% 
+\contentsline {subsection}{\numberline {0.2.10}UC10: Ricerca annuncio}{15}% 
+\contentsline {subsection}{\numberline {0.2.11}UC11: Ricerca studente}{16}% 
+\contentsline {subsection}{\numberline {0.2.12}UC12: Ricerca pagina titolo}{17}% 
+\contentsline {subsection}{\numberline {0.2.13}UC13: Visualizzazione annunci consigliati}{18}% 
+\contentsline {subsection}{\numberline {0.2.14}UC14: Inserimento annuncio libro in vendita}{19}% 
+\contentsline {subsection}{\numberline {0.2.15}UC15: Inserimento nuovo titolo}{20}% 
+\contentsline {subsection}{\numberline {0.2.16}UC16: Modifica annuncio libro in vendita}{21}% 
+\contentsline {subsection}{\numberline {0.2.17}UC17: Notifica avvenuta vendita libro}{23}% 
+\contentsline {subsection}{\numberline {0.2.18}UC18: Recensione studente}{24}% 
+\contentsline {subsubsection}{UC18.1: Recensione acquirente}{24}% 
+\contentsline {subsubsection}{UC18.2: Recensione venditore}{25}% 
+\contentsline {subsection}{\numberline {0.2.19}UC19: Conferma acquisto libro}{26}% 
+\contentsline {section}{\numberline {0.3}Class diagram}{27}% 
+\contentsline {section}{\numberline {0.4}Scelte progettuali}{27}% 
+\contentsline {section}{\numberline {0.5}Toolchain}{28}% 
+\contentsline {section}{\numberline {0.6}Algoritmo: il clustering}{28}% 
+\contentsline {subsection}{\numberline {0.6.1}K-means clustering}{28}% 
