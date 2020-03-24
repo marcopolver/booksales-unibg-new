@@ -24,13 +24,13 @@ class UseCasesTest(unittest.TestCase):
     def test_signup(self):
 
         #User opens homepage
-        self.browser.get('http://localhost:8000/')
+        self.browser.get('http://marcopolver.pythonanywhere.com/')
 
         #The title has to be "Home"
         self.assertIn('Home', self.browser.title)
 
         #Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
         #The user opens the signup page
@@ -39,7 +39,7 @@ class UseCasesTest(unittest.TestCase):
 
         #The new url has to be /signup/
         signup_url = self.browser.current_url
-        self.assertEqual(signup_url, 'http://localhost:8000/signup/')
+        self.assertEqual(signup_url, 'http://marcopolver.pythonanywhere.com/signup/')
         self.assertIn(self.browser.title, 'Sign Up')
 
         #The user fills the form
@@ -86,12 +86,12 @@ class UseCasesTest(unittest.TestCase):
         submit_button = self.browser.find_element_by_name('submit')
 
         # The user writes his username and email address (wrong)
-        username_box.send_keys('prova')
+        username_box.send_keys('prova7')
         email_box.send_keys('prova@studenti.unibg.it')
         password1_box.send_keys('giovannino95')
         password2_box.send_keys('giovannino95')
         name_box.send_keys('Prova')
-        surname_box.send_keys('Uno')
+        surname_box.send_keys('Nove')
         major_box.select_by_index(1)  # Ingegneria informatica triennale
         # year_of_study.send_keys('1')        #Primo anno
         submit_button.click()
@@ -99,7 +99,7 @@ class UseCasesTest(unittest.TestCase):
         time.sleep(1)
 
         #The user should see the login page
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/login/')
+        #self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/login/')
 
     '''
     Test case:
@@ -110,48 +110,60 @@ class UseCasesTest(unittest.TestCase):
     def test_first_page(self):
 
         # User opens homepage
-        self.browser.get('http://localhost:8000/')
+        self.browser.get('http://marcopolver.pythonanywhere.com/')
 
         # The title has to be "Home"
         self.assertIn('Home', self.browser.title)
 
         # Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
         # The user opens the signup page
-        login_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'login' in link.text][0]
+        login_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'Login' in link.text][0]
         login_link.click()
 
         # The new url has to be /login/
         login_url = self.browser.current_url
-        self.assertEqual(login_url, 'http://localhost:8000/login/')
+        self.assertEqual(login_url, 'http://marcopolver.pythonanywhere.com/login/')
         self.assertIn(self.browser.title, 'Login')
 
         #The user fills the form
         username_box = self.browser.find_element_by_name('username')
         password_box = self.browser.find_element_by_name('password')
         username_box.send_keys('ING_GES_M11')
-        password_box.send_keys('giovannino95')
+        password_box.send_keys('bombastic24')
 
         #The user clicks the login button to log in
         submit_button = [button for button in self.browser.find_elements_by_css_selector('button') if 'Login' in button.text][0]
         submit_button.click()
 
         #The user should be in the homepage and see a greeting message
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/')
 
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertEqual(paragraph, 'Hi ING_GES_M11!')
+
+        #The user clicks on the personal page link
+        personal_page_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'ING_GES_M11' in link.text][0]
+        personal_page_link.click()
+
+        #The user should be in their personal page
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/users/ING_GES_M11/profile')
+
+        title = self.browser.find_element_by_css_selector('h2').text
+        self.assertEqual(title, 'ING_GES_M11')
+
+        self.browser.get('http://marcopolver.pythonanywhere.com/')
 
         #The user clicks on the "Suggested ads" link
         suggested_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'Suggested' in link.text][0]
         suggested_link.click()
 
-        time.sleep(60)  #Necessary for the algorhythm to be executed
+        time.sleep(5)  #Necessary for the algorhythm to be executed
 
         #The user should be in their personal suggested-ads page
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/users/ING_GES_M11/suggested')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/users/ING_GES_M11/suggested')
 
         # The user should see a number of cards between 0 and 20 (included)
         cards = [card for card in self.browser.find_elements_by_class_name('card')]
@@ -165,46 +177,50 @@ class UseCasesTest(unittest.TestCase):
         #time.sleep(10)
 
         # The user should be in the homepage
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/')
+        time.sleep(2)
+
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/')
 
         # Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
     def test_search_ad(self):
         # User opens homepage
-        self.browser.get('http://localhost:8000/')
+        self.browser.get('http://marcopolver.pythonanywhere.com/')
 
         # The title has to be "Home"
         self.assertIn('Home', self.browser.title)
 
         # Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
         # The user opens the signup page
-        login_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'login' in link.text][0]
+        login_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'Login' in link.text][0]
         login_link.click()
 
         # The new url has to be /login/
         login_url = self.browser.current_url
-        self.assertEqual(login_url, 'http://localhost:8000/login/')
+        self.assertEqual(login_url, 'http://marcopolver.pythonanywhere.com/login/')
         self.assertIn(self.browser.title, 'Login')
 
         # The user fills the form
         username_box = self.browser.find_element_by_name('username')
         password_box = self.browser.find_element_by_name('password')
         username_box.send_keys('ING_GES_M11')
-        password_box.send_keys('giovannino95')
+        password_box.send_keys('bombastic24')
 
         # The user clicks the login button to log in
         submit_button = [button for button in self.browser.find_elements_by_css_selector('button') if 'Login' in button.text][0]
         submit_button.click()
 
         # The user should be in the homepage and see a greeting message
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/')
+        time.sleep(2)
 
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        #self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/')
+
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertEqual(paragraph, 'Hi ING_GES_M11!')
 
         # The user clicks on the "Search" link
@@ -212,7 +228,7 @@ class UseCasesTest(unittest.TestCase):
         search_link.click()
 
         # The user should be in the search page
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/search/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/search/')
         self.assertIn('Search', self.browser.title)
 
         # The user clicks on the "To book ads" link
@@ -220,7 +236,7 @@ class UseCasesTest(unittest.TestCase):
         ads_link.click()
 
         # The user should be in the search-ads page
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/search/ads/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/search/ads/')
         self.assertIn('Search ad', self.browser.title)
 
         # The user sets the filters and searches the desired ads
@@ -239,7 +255,7 @@ class UseCasesTest(unittest.TestCase):
         submit_button.click()
 
         # The user should be redirected to the results page
-        self.assertIn('http://localhost:8000/search/ads/results', self.browser.current_url)
+        self.assertIn('http://marcopolver.pythonanywhere.com/search/ads/results', self.browser.current_url)
         self.assertIn('Search ad', self.browser.title)
 
         # The results should be coherent with the filters
@@ -267,48 +283,50 @@ class UseCasesTest(unittest.TestCase):
         # time.sleep(10)
 
         # The user should be in the homepage
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/')
 
         # Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
 
 
     def test_search_user(self):
         # User opens homepage
-        self.browser.get('http://localhost:8000/')
+        self.browser.get('http://marcopolver.pythonanywhere.com/')
 
         # The title has to be "Home"
         self.assertIn('Home', self.browser.title)
 
         # Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
         # The user opens the login page
-        login_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'login' in link.text][0]
+        login_link = [link for link in self.browser.find_elements_by_css_selector('a') if 'Login' in link.text][0]
         login_link.click()
 
         # The new url has to be /login/
         login_url = self.browser.current_url
-        self.assertEqual(login_url, 'http://localhost:8000/login/')
+        self.assertEqual(login_url, 'http://marcopolver.pythonanywhere.com/login/')
         self.assertIn(self.browser.title, 'Login')
 
         # The user fills the form
         username_box = self.browser.find_element_by_name('username')
         password_box = self.browser.find_element_by_name('password')
         username_box.send_keys('ING_GES_M11')
-        password_box.send_keys('giovannino95')
+        password_box.send_keys('bombastic24')
 
         # The user clicks the login button to log in
         submit_button = [button for button in self.browser.find_elements_by_css_selector('button') if 'Login' in button.text][0]
         submit_button.click()
 
         # The user should be in the homepage and see a greeting message
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/')
+        time.sleep(2)
+        #self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/')
+        
 
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertEqual(paragraph, 'Hi ING_GES_M11!')
 
         # The user clicks on the "Search" link
@@ -316,7 +334,7 @@ class UseCasesTest(unittest.TestCase):
         search_link.click()
 
         # The user should be in the search page
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/search/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/search/')
         self.assertIn('Search', self.browser.title)
 
         # The user clicks on the "To users" link
@@ -324,7 +342,7 @@ class UseCasesTest(unittest.TestCase):
         users_link.click()
 
         # The user should be in the search-users page
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/search/users/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/search/users/')
         self.assertIn('Search student', self.browser.title)
 
         # The user sets the filters and searches the desired ads
@@ -341,7 +359,7 @@ class UseCasesTest(unittest.TestCase):
         submit_button.click()
 
         # The user should be redirected to the results page
-        self.assertIn('http://localhost:8000/search/users/results', self.browser.current_url)
+        self.assertIn('http://marcopolver.pythonanywhere.com/search/users/results', self.browser.current_url)
         self.assertIn('Search student', self.browser.title)
 
         # The results should be coherent with the filters
@@ -367,10 +385,10 @@ class UseCasesTest(unittest.TestCase):
         # time.sleep(10)
 
         # The user should be in the homepage
-        self.assertEqual(self.browser.current_url, 'http://localhost:8000/')
+        self.assertEqual(self.browser.current_url, 'http://marcopolver.pythonanywhere.com/')
 
         # Since the user hasn't logged in, a paragraph should say "You are not logged in"
-        paragraph = self.browser.find_element_by_css_selector('p').text
+        paragraph = self.browser.find_element_by_css_selector('h1').text
         self.assertIn('You are not logged in', paragraph)
 
 
