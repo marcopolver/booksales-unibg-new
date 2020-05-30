@@ -1,263 +1,270 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050) (preloaded format=pdflatex 2019.6.30)  20 AUG 2019 09:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.5.18)  30 MAY 2020 14:41
 entering extended mode
-**./Requisiti.tex
-(Requisiti.tex
-LaTeX2e <2018-12-01>
-(/home/marco/.miktex/texmfs/install/tex/latex/base/report.cls
-Document Class: report 2018/09/03 v1.4i Standard LaTeX document class
-(/home/marco/.miktex/texmfs/install/tex/latex/base/size10.clo
-File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Requisiti.tex
+(./Requisiti.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
-\@mathmargin=\skip43
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2019/11/16 v.1.4.03 Italian support for the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count176
+)
+\it@lettering=\count177
+\it@doublequoteactive=\count178
+\it@ISOcompliance=\count179
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count180
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(/home/marco/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/marco/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen103
+\ex@=\dimen136
 ))
-(/home/marco/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen137
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count89
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count90
-\leftroot@=\count91
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count92
-\DOTSCASE@=\count93
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
-\dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\inf@bad=\count181
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count182
+\leftroot@=\count183
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count184
+\DOTSCASE@=\count185
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen138
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count186
+\c@MaxMatrixCols=\count187
+\dotsspace@=\muskip16
+\c@parentequation=\count188
+\dspbrk@lvl=\count189
 \tag@help=\toks17
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count190
+\column@=\count191
+\maxfields@=\count192
 \andhelp@=\toks18
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen139
+\alignsep@=\dimen140
+\tagshift@=\dimen141
+\tagwidth@=\dimen142
+\totwidth@=\dimen143
+\lineht@=\dimen144
 \@envbody=\toks19
-\multlinegap=\skip44
-\multlinetaggap=\skip45
+\multlinegap=\skip50
+\multlinetaggap=\skip51
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count101
+\c@float@type=\count193
 \float@exts=\toks21
-\float@box=\box29
+\float@box=\box47
 \@float@everytoks=\toks22
-\@floatcapt=\box30
+\@floatcapt=\box48
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/marco/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/marco/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/home/marco/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
 
-(/home/marco/.miktex/texmfs/install/tex/latex/tools/calc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count102
-\calc@Bcount=\count103
-\calc@Adimen=\dimen114
-\calc@Bdimen=\dimen115
-\calc@Askip=\skip46
-\calc@Bskip=\skip47
+\calc@Acount=\count194
+\calc@Bcount=\count195
+\calc@Adimen=\dimen147
+\calc@Bdimen=\dimen148
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count104
-\calc@Cskip=\skip48
+\calc@Ccount=\count196
+\calc@Cskip=\skip54
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count105
-\l_MT_multwidth_dim=\dimen116
-\origjot=\skip49
-\l_MT_shortvdotswithinadjustabove_dim=\dimen117
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen118
-\l_MT_above_intertext_sep=\dimen119
-\l_MT_below_intertext_sep=\dimen120
-\l_MT_above_shortintertext_sep=\dimen121
-\l_MT_below_shortintertext_sep=\dimen122
+\g_MT_multlinerow_int=\count197
+\l_MT_multwidth_dim=\dimen149
+\origjot=\skip55
+\l_MT_shortvdotswithinadjustabove_dim=\dimen150
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen151
+\l_MT_above_intertext_sep=\dimen152
+\l_MT_below_intertext_sep=\dimen153
+\l_MT_above_shortintertext_sep=\dimen154
+\l_MT_below_shortintertext_sep=\dimen155
 )
-(/home/marco/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/home/marco/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count106
-\Gm@cntv=\count107
-\c@Gm@tempcnt=\count108
-\Gm@bindingoffset=\dimen123
-\Gm@wd@mp=\dimen124
-\Gm@odd@mp=\dimen125
-\Gm@even@mp=\dimen126
-\Gm@layoutwidth=\dimen127
-\Gm@layoutheight=\dimen128
-\Gm@layouthoffset=\dimen129
-\Gm@layoutvoffset=\dimen130
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
 \Gm@dimlist=\toks24
-
-(/home/marco/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
-(Requisiti.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count267
+\l__pdf_internal_box=\box49
+)
+(./Requisiti.aux)
 \openout1 = `Requisiti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \it@ocap on input line 15.
+LaTeX Info: Redefining \it@ccap on input line 15.
 
-(/home/marco/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+
+File italian.ldf warning: 
+italian.ldf    With OT1 encoding guillemets are poorly faked
+italian.ldf    Use T1 encoding
+italian.ldf    or specify a font with command \CaporaliFrom
+italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen131
-\scratchbox=\box31
-\nofMPsegments=\count110
-\nofMParguments=\count111
+\scratchcounter=\count268
+\scratchdimen=\dimen164
+\scratchbox=\box50
+\nofMPsegments=\count269
+\nofMParguments=\count270
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen132
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen165
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
 \everyMPtoPDFconversion=\toks26
-) (/home/marco/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/home/marco/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(/home/marco/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-(/home/marco/.miktex/texmfs/install/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -292,576 +299,305 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
-(/home/marco/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
-(/home/marco/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (8.18765pt too wide) in paragraph at lines 17--17
+ [][] 
+ []
 
-{/home/marco/.miktex/texmfs/data/pdftex/config/pdftex.map}] (Requisiti.toc)
+(./Requisiti.toc)
 \tf@toc=\write3
 \openout3 = `Requisiti.toc'.
 
  [1
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
-
-(/home/marco/.miktex/texmfs/install/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]\OT1/cmr/m/n/10 Registrazione
+Underfull \hbox (badness 1715) in paragraph at lines 44--44
+[]\OT1/cmr/m/n/10 Registrazione nuo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-[]\OT1/cmr/m/n/10 Accesso al servizio da parte di uno studente
+Underfull \hbox (badness 1210) in paragraph at lines 59--59
+\OT1/cmr/m/n/10 te-men-te re-gi-stra-to tra-mi-te in-se-ri-men-to di user-na-me
+ e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
-\OT1/cmr/m/n/10 precedentemente registrato tramite inserimento di
+Overfull \hbox (36.28073pt too wide) in paragraph at lines 42--62
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]\OT1/cmr/m/n/10 Registrazione
+Underfull \hbox (badness 1152) in paragraph at lines 72--73
+[]\OT1/cmr/m/n/10 Classe B: li-bro in-tat-to con sot-to-li-nea-tu-re e
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-\OT1/cmr/m/n/10 nuovo
+Underfull \hbox (badness 3312) in paragraph at lines 73--74
+[]\OT1/cmr/m/n/10 Classe C: li-bro con pic-co-li se-gni d'u-su-ra,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]\OT1/cmr/m/n/10 Accesso
+Underfull \hbox (badness 6461) in paragraph at lines 78--78
+[]\OT1/cmr/m/n/10 Visualizzazione li-
  []
 
 
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 56--82
+Underfull \hbox (badness 1783) in paragraph at lines 78--79
+[]\OT1/cmr/m/n/10 Visualizzazione nel-la pa-gi-na "Sug-ge-sted ads" di li-bri
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]\OT1/cmr/m/n/10 Inserimento ti-to-lo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\OT1/cmr/m/n/10 in li-sta "Ti-to-li
+ []
+
+
+Overfull \hbox (36.28073pt too wide) in paragraph at lines 63--86
 [][] 
  []
 
 [2]
-Underfull \hbox (badness 1152) in paragraph at lines 94--95
-[]\OT1/cmr/m/n/10 Classe B: libro intatto con sottolineature e
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 95--96
-[]\OT1/cmr/m/n/10 Classe C: libro con piccoli segni d'usura,
- []
-
-
-Underfull \hbox (badness 3547) in paragraph at lines 96--97
-[]\OT1/cmr/m/n/10 Classe D: libro con pagine stropicciate o
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\OT1/cmr/m/n/10 Visualizzazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\OT1/cmr/m/n/10 libri consigliati
- []
-
-
-Underfull \hbox (badness 3009) in paragraph at lines 102--103
-[]\OT1/cmr/m/n/10 Interesse mostrato esplicitamente dallo studente
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-[]\OT1/cmr/m/n/10 Ricerche effettuate dallo studente nell'ultima
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 104--105
-\OT1/cmr/m/n/10 simili (si considerino corso di laurea, ricerche
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]\OT1/cmr/m/n/10 Inserimento titolo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-\OT1/cmr/m/n/10 in lista "Titoli
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 83--109
+Overfull \hbox (36.28073pt too wide) in paragraph at lines 87--105
 [][] 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]\OT1/cmr/m/n/10 Inserimento
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-[]\OT1/cmr/m/n/10 Condizioni del libro seguendo le indicazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 110--130
-[][] 
- []
-
-[4] [5]
-Underfull \hbox (badness 1406) in paragraph at lines 133--133
+[3] [4]
+Underfull \hbox (badness 1406) in paragraph at lines 108--108
 []\OT1/cmr/m/n/10 Inserimento di un
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 140--140
-\OT1/cmr/m/n/10 ISBN sia stato inserito in precedenza e, se cio non
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/10 Modifica in-for-
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 140--140
-\OT1/cmr/m/n/10 e avvenuto, inserisce il titolo nel database e crea
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+\OT1/cmr/m/n/10 ma-zio-ni per-so-na-li
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 140--140
-\OT1/cmr/m/n/10 automaticamente una pagina del titolo contenente le
+Underfull \hbox (badness 1097) in paragraph at lines 136--136
+[]\OT1/cmr/m/n/10 Modifica da par-te di uno stu-den-te del-le in-for-ma-zio-ni
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
-[]\OT1/cmr/m/n/10 Accesso pagina
+Overfull \hbox (36.28073pt too wide) in paragraph at lines 106--138
+[][] 
+ []
+
+[5]
+Overfull \hbox (36.28073pt too wide) in paragraph at lines 140--160
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-[]\OT1/cmr/m/n/10 Accesso pagina
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]\OT1/cmr/m/n/10 Recensione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-[]\OT1/cmr/m/n/10 Modifica
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]\OT1/cmr/m/n/10 Recensione
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-\OT1/cmr/m/n/10 informazioni
- []
-
-
-Underfull \hbox (badness 1097) in paragraph at lines 160--160
-[]\OT1/cmr/m/n/10 Modifica da parte di uno studente delle informazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 131--162
+Overfull \hbox (36.28073pt too wide) in paragraph at lines 161--167
 [][] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-[]\OT1/cmr/m/n/10 Accesso pagina
- []
+<./images/g_uc.jpeg, id=28, 776.9025pt x 704.6325pt>
+File: ./images/g_uc.jpeg Graphic file (type jpg)
+<use ./images/g_uc.jpeg>
+Package pdftex.def Info: ./images/g_uc.jpeg  used on input line 173.
+(pdftex.def)             Requested size: 376.45348pt x 341.43456pt.
+<./images/sb_uc.jpeg, id=29, 704.6325pt x 596.2275pt>
+File: ./images/sb_uc.jpeg Graphic file (type jpg)
+<use ./images/sb_uc.jpeg>
+Package pdftex.def Info: ./images/sb_uc.jpeg  used on input line 179.
+(pdftex.def)             Requested size: 483.69179pt x 409.27766pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-\OT1/cmr/m/n/10 personale
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--173
-[]\OT1/cmr/m/n/10 Ricerca pagina
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-[]\OT1/cmr/m/n/10 Modifica pagina
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 179--179
-[]\OT1/cmr/m/n/10 Comunicazione da parte del venditore dell'avvenuta
- []
-
-
-Underfull \hbox (badness 1859) in paragraph at lines 180--180
-[]\OT1/cmr/m/n/10 Il sistema invia all'utente citato dal venditore come
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\OT1/cmr/m/n/10 acquirente una email per richiedere la conferma
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 180--180
-\OT1/cmr/m/n/10 pagina in cui l'acquirente potra confermare o negare
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 181--183
-\OT1/cmr/m/n/10 dell'utente che e stato indicato dal venditore quale
- []
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 187--188
-[]\OT1/cmr/m/n/10 il sistema inviera una email al venditore per
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 164--191
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]\OT1/cmr/m/n/10 Recensione
- []
-
-
-Underfull \hbox (badness 4144) in paragraph at lines 194--194
-\OT1/cmr/m/n/10 dovra risultare possibile soltanto dopo la conferma
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-[]\OT1/cmr/m/n/10 Recensione
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 195--195
-[]\OT1/cmr/m/n/10 Inserimento da parte di un utente venditore di una
- []
-
-
-Underfull \hbox (badness 4144) in paragraph at lines 195--195
-\OT1/cmr/m/n/10 dovra risultare possibile soltanto dopo la conferma
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 196--196
-[]\OT1/cmr/m/n/10 Inserimento da parte di un utente qualsiasi di una
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--197
-[]\OT1/cmr/m/n/10 Segnalazione
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
-[]\OT1/cmr/m/n/10 Gestione
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 198--198
-\OT1/cmr/m/n/10 autore del contenuto eliminato deve essere notificato
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
-[]\OT1/cmr/m/n/10 Comunicazioni
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 192--201
-[][] 
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 204--204
-[]\OT1/cmr/m/n/10 Richiesta di
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]\OT1/cmr/m/n/10 Gestione richiesta
- []
-
-
-Overfull \hbox (36.28072pt too wide) in paragraph at lines 202--207
-[][] 
- []
-
-<./images/gua_uc.jpeg, id=34, 614.7768pt x 234.8775pt>
-File: ./images/gua_uc.jpeg Graphic file (type jpg)
-<use ./images/gua_uc.jpeg>
-Package pdftex.def Info: ./images/gua_uc.jpeg  used on input line 213.
-(pdftex.def)             Requested size: 483.70776pt x 184.80214pt.
-
-Overfull \hbox (56.91641pt too wide) in paragraph at lines 213--214
+Overfull \hbox (56.90044pt too wide) in paragraph at lines 179--180
  [][] 
  []
 
-[8]
-<./images/st_uc.jpeg, id=38, 794.97pt x 594.0594pt>
-File: ./images/st_uc.jpeg Graphic file (type jpg)
-<use ./images/st_uc.jpeg>
-Package pdftex.def Info: ./images/st_uc.jpeg  used on input line 219.
-(pdftex.def)             Requested size: 483.70584pt x 361.46017pt.
-
-Overfull \hbox (56.91449pt too wide) in paragraph at lines 219--220
- [][] 
+[7 <./images/g_uc.jpeg>]
+Underfull \hbox (badness 2269) in paragraph at lines 209--210
+[]\OT1/cmr/m/n/10 La mail uni-ver-si-ta-ria in-se-ri-ta de-ve ter-mi-na-re con 
+il suf-fis-so
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-[]\OT1/cmr/m/n/10 L'amministratore che effettua la registrazione di un secondo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-[]\OT1/cmr/m/n/10 L'indirizzo email deve essere formattato correttamente
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 224--260
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 184--221
 [] 
  []
 
-[9 <./images/gua_uc.jpeg> <./images/st_uc.jpeg>] [10]
-Underfull \hbox (badness 4686) in paragraph at lines 287--288
-[]\OT1/cmr/m/n/10 L'amministratore accede alla pagina per il login dedicata agl
-i
+[8 <./images/sb_uc.jpeg>]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 223--247
+[] 
  []
 
-
-Underfull \hbox (badness 1264) in paragraph at lines 294--295
-[]\OT1/cmr/m/n/10 Se i dati inseriti sono corretti, il sistema permette l'acces
-so
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 274--298
+[9]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 249--266
 [] 
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 300--324
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 268--285
+[] 
+ []
+
+[10]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 287--304
+[] 
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 306--323
 [] 
  []
 
 [11]
-Underfull \hbox (badness 2591) in paragraph at lines 342--343
-[]\OT1/cmr/m/n/10 Il sistema mostra username dello studente che ha effettuato l
-a
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 326--350
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 325--359
 [] 
  []
 
 [12]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 352--379
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 361--383
 [] 
  []
 
 [13]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 381--406
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 385--408
+[] 
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 410--435
 [] 
  []
 
 [14]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 408--447
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 437--466
 [] 
  []
 
 [15]
-Underfull \hbox (badness 1371) in paragraph at lines 460--461
-[]\OT1/cmr/m/n/10 Generazione automatica di una password da 10 caratteri
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 468--497
+[] 
  []
 
 [16]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 474--506
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 499--520
 [] 
  []
 
 [17]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 508--525
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 523--560
 [] 
  []
 
 [18]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 527--544
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 546--563
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 562--597
 [] 
  []
 
 [19]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 565--601
-[] 
- []
-
-[20]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 603--625
-[] 
- []
-
-[21]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 627--650
-[] 
+Underfull \hbox (badness 2237) in paragraph at lines 612--613
+[]\OT1/cmr/m/n/10 Lo stu-den-te ac-ce-de al-la pa-gi-na re-la-ti-va al-l'an-nun
+-cio che in-ten-de
  []
 
 
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 652--680
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 599--633
+[] 
+ []
+
+[20] [21]
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 647--683
 [] 
  []
 
 [22]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 682--710
+Underfull \hbox (badness 4132) in paragraph at lines 710--711
+[]\OT1/cmr/m/n/10 Comando per la scrit-tu-ra di una re-cen-sio-ne nei con-fron-
+ti
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 686--727
 [] 
  []
 
 [23]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 712--746
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 729--770
 [] 
  []
 
 [24]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 748--789
+Underfull \hbox (badness 1242) in paragraph at lines 803--804
+[]\OT1/cmr/m/n/10 Invia una email al ven-di-to-re per no-ti-fi-car-lo del-l'av-
+ve-nu-ta
+ []
+
+
+Overfull \hbox (22.66483pt too wide) in paragraph at lines 772--811
 [] 
  []
 
 [25]
-Overfull \vbox (6.12799pt too high) has occurred while \output is active []
-
-
-[26]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 791--820
-[] 
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 822--859
-[] 
- []
-
-[27]
-Underfull \hbox (badness 1014) in paragraph at lines 891--892
-\OT1/cmr/m/n/10 "Titolo inserito correttamente, procedere con la pubblicazione
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 861--896
-[] 
- []
-
-[28]
-Underfull \hbox (badness 2237) in paragraph at lines 911--912
-[]\OT1/cmr/m/n/10 Lo studente accede alla pagina relativa all'annuncio che inte
-nde
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 898--934
-[] 
- []
-
-[29] [30]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 948--986
-[] 
- []
-
-[31]
-Underfull \hbox (badness 4132) in paragraph at lines 1013--1014
-[]\OT1/cmr/m/n/10 Comando per la scrittura di una recensione nei confronti
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 989--1030
-[] 
- []
-
-[32]
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1032--1073
-[] 
- []
-
-[33]
-Underfull \hbox (badness 1242) in paragraph at lines 1106--1107
-[]\OT1/cmr/m/n/10 Invia una email al venditore per notificarlo dell'avvenuta
- []
-
-
-Overfull \hbox (22.66483pt too wide) in paragraph at lines 1075--1114
-[] 
- []
-
-[34]
-<./images/class_diagram.jpeg, id=121, 735.7086pt x 731.3724pt>
+<./images/class_diagram.jpeg, id=91, 735.7086pt x 731.3724pt>
 File: ./images/class_diagram.jpeg Graphic file (type jpg)
 <use ./images/class_diagram.jpeg>
-Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 1118.
+Package pdftex.def Info: ./images/class_diagram.jpeg  used on input line 815.
 (pdftex.def)             Requested size: 483.70566pt x 480.85475pt.
 
-Overfull \hbox (56.9143pt too wide) in paragraph at lines 1118--1119
+Overfull \hbox (56.9143pt too wide) in paragraph at lines 815--816
  [][] 
  []
 
-[35] [36 <./images/class_diagram.jpeg>]
-Overfull \hbox (29.01396pt too wide) in paragraph at lines 1129--1130
-[]\OT1/cmr/m/n/10 L'applicazione lavorera in uno spazio messo a disposizione g
-ratuitamente dal PaaS PythonAnywhere,
- []
-
-
-Overfull \hbox (12.09825pt too wide) in paragraph at lines 1157--1158
-[]\OT1/cmr/m/n/10 Ripetere dal punto 3, finche nessuna osservazione cambiera 
-piu il proprio cluster di appartenenza. 
- []
-
-<./images/elbow_method.png, id=129, 824.07875pt x 524.96124pt>
-File: ./images/elbow_method.png Graphic file (type png)
-<use ./images/elbow_method.png>
-Package pdftex.def Info: ./images/elbow_method.png  used on input line 1175.
-(pdftex.def)             Requested size: 412.03836pt x 262.47998pt.
-[37] [38 <./images/elbow_method.png>] (Requisiti.aux) ) 
+[26] [27 <./images/class_diagram.jpeg>] [28] (./Requisiti.aux) ) 
 Here is how much of TeX's memory you used:
- 3531 strings out of 494864
- 50790 string characters out of 3178303
- 128809 words of memory out of 3000000
- 7111 multiletter control sequences out of 15000+200000
- 12455 words of font info for 48 fonts, out of 3000000 for 9000
- 0 hyphenation exceptions out of 8191
- 41i,9n,25p,586b,379s stack positions out of 5000i,500n,10000p,200000b,50000s
-</home/marco/.miktex/tex
-mfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/marco/.miktex/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/marco/.miktex/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/marco/.miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/marco/.miktex/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/marco/.miktex/texmfs/in
-stall/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/marco/.miktex/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/marco/.miktex/texmfs/instal
-l/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/marco/.miktex/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></home/marco/.miktex/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></home/marco/.miktex/texmfs/install/font
-s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Requisiti.pdf (39 pages, 1163695 bytes).
+ 4472 strings out of 483172
+ 61352 string characters out of 5965816
+ 324985 words of memory out of 5000000
+ 19431 multiletter control sequences out of 15000+600000
+ 540882 words of font info for 57 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 30i,9n,27p,794b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/marco/.
+texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb>
+Output written on Requisiti.pdf (28 pages, 927511 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

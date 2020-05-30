@@ -1,5 +1,6 @@
-\documentclass[10pt,a4paper]{report}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -10,7 +11,7 @@
 \usepackage[]{algorithm2e}
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \usepackage[left=3.00cm, right=3.00cm, top=3.00cm, bottom=3.00cm]{geometry}
-\author{Del Prete Giovanni, Ghilardi Nicola, Polver Marco}
+\author{Del Prete Giovanni (1035205), Ghilardi Nicola (1040848), Polver Marco (1040386)}
 \title{BookSales UniBG: iterazione 2}
 
 \begin{document}
@@ -54,7 +55,7 @@
 		Tale funzione di costo è la media delle distanze medie delle osservazioni dal centroide del proprio cluster. E' facile notare che aumentando il numero di
 		cluster diminuirà, di conseguenza, la media delle distanze delle osservazioni dai centroidi; dunque la funzione di costo è decrescente.\\
 		L'\textit{elbow method} è un metodo ''grafico'' che consente di determinare il numero di cluster ideale valutando la pendenza della funzione di costo.
-		Come si evince dalla figura 4, il valore ottimo di k è prossimo al punto dove la funzione di costo inizia a decrescere più lentamente.
+		Come si evince dalla Figura 2, il valore ottimo di k è prossimo al punto dove la funzione di costo inizia a decrescere più lentamente.
 		\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{elbow_method.png}
@@ -121,7 +122,13 @@
 \section{Funzionalità aggiunte}
 All'applicazione sono state aggiunte funzionalità per renderla più user friendly. La prima è quella di fornire un'anteprima della copertina dei libri in copertina. Le immagini vengono caricate nel database e in fase di ricerca vengono lette e caricate nella schermata.\\
 Ogni utente inoltre ha la possibilità di aggiungere un libro nella propria wishlist. Per permettere tale operazione si è aggiunto un tasto \textit{Add to wishlist}.
-\end{document}
-			
-	
+
+\section{Resoconto test}
+Con il fine di verificare la corretta implementazione delle nuove funzionalità e di garantire la correttezza delle funzionalità aggiunte in precedenza, è stato creato un nuovo caso di test con Selenium WebDriver per coprire il caso d'uso UC4 (Aggiunta di in un annuncio in "wishlist") ed è stata eseguite l'intera sequenza di test.\\
+Il risultato ottenuto è stato quello atteso, ovvero tutti i test hanno dato risultato positivo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{tests_i3b.png}
+	\caption{Risultato dei test}
+\end{figure}
 \end{document}
